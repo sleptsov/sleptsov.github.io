@@ -1,0 +1,31 @@
+body {
+    background-color: #eeeeee;
+}
+
+article {
+    width: 40%;
+    margin: 40px auto;
+    padding: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px;
+}
+
+.content-info{
+    margin: 10px 50px;
+}
+
+hr {
+    width: 90%;
+}
+
+.user-avatar-img {
+    width: 200px;
+    height: 200px;
+}
+
+.user-avatar-box, .user-name-box{
+    text-align: center;
+}
+.user-name-box h1{
+    margin: 20px auto;
+}
