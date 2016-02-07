@@ -33,7 +33,7 @@ a {
     float: left;
 }
 .header-menu li a {
-    display: block;
+    display: inline-block;
     width: 100px;
     padding: 14px 16px;
     text-align: center;
@@ -86,14 +86,12 @@ a {
     float: left;
 }
 
-.trade-mark-copy-rights {
+#trade-mark-copy-rights {
     float: right;
-    font-size: 13px;
-    padding: 15px 24px;
 }
 
-.footer-menu li a {
-    display: block;
+.footer-menu li a, #trade-mark-copy-rights {
+    display: inline-block;
     color: #2c2c2c;
     padding: 15px 24px;
     font-size: 13px;
