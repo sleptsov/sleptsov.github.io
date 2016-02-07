@@ -37,7 +37,7 @@ a {
     width: 100px;
     padding: 14px 16px;
     text-align: center;
-    font-size: 14.67px;
+    font-size: 14px;
     color: #ffffff;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -67,7 +67,7 @@ a {
 .aside-goods-menu li a {
     display: block;
     padding: 15px 24px;
-    font-size: 13.33px;
+    font-size: 13px;
     color: #656363;
 }
 .aside-goods-menu li a:hover {
@@ -88,7 +88,7 @@ a {
 
 .trade-mark-copy-rights {
     float: right;
-    font-size: 13.33px;
+    font-size: 13px;
     padding: 15px 24px;
 }
 
@@ -96,7 +96,7 @@ a {
     display: block;
     color: #2c2c2c;
     padding: 15px 24px;
-    font-size: 13.33px;
+    font-size: 13px;
 }
 
 .footer-menu li a:hover {
@@ -112,8 +112,13 @@ a {
     text-align: center;
 }
 
+.content-img-box img {
+    max-width: 100%;
+    height: auto;
+}
+
 .content-info-box {
-    font-size: 13.33px;
+    font-size: 13px;
     color: #2c2c2c;
     line-height: 1.6;
     margin-left: 290px;
