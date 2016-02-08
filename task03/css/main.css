@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Courier New", sans-serif;
     background-color: #f9f9f9;
 }
 #container {
@@ -14,6 +14,17 @@ body {
 a {
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
 /* header */
 
 .brand-logo-img-box {
@@ -23,16 +34,12 @@ a {
     margin: 50px 0 40px 0;
 }
 .header-menu {
-    overflow: hidden;
-    height: 42px;
     background: linear-gradient(to top, #444343, #5e5e5e);
     margin-bottom: 40px;
+}
 
-}
-.header-menu li {
-    float: left;
-}
 .header-menu li a {
+    float: left;
     display: inline-block;
     width: 100px;
     padding: 14px 16px;
@@ -46,6 +53,27 @@ a {
     border-left: 2px solid #838383;
     border-right: 2px solid #838383;
     width: 96px;
+}
+
+/* content */
+
+.content-info-box {
+    float: right;
+    width: 70%;
+}
+
+.content-goods-img-box {
+    border: 1px solid #c8c8c8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.content-goods-info-box {
+    font-size: 13px;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 30px 20px;
+
 }
 
 /* aside goods menu */
@@ -76,13 +104,7 @@ a {
 
 /* footer menu */
 
-footer {
-    clear: both;
-}
-
 .footer-menu {
-    overflow: hidden;
-    height: 42px;
     background-color: #e1e1e1;
     margin: 54px 0;
 }
@@ -104,30 +126,4 @@ footer {
 
 .footer-menu li a:hover {
     text-decoration: underline;
-}
-
-/* content */
-
-.content {
-    float: right;
-    width: 70%;
-}
-
-.content-img-box {
-    border: 1px solid #c8c8c8;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.content-img-box img {
-    max-width: 100%;
-    height: auto;
-}
-
-.content-info-box {
-    font-size: 13px;
-    color: #2c2c2c;
-    line-height: 1.6;
-    padding: 30px 20px;
-
 }
