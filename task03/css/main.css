@@ -51,7 +51,7 @@ a {
 /* aside goods menu */
 
 .aside-goods-menu {
-    width: 240px;
+    min-width: 25%;
     float: left;
 }
 .aside-goods-menu li{
@@ -75,6 +75,11 @@ a {
 }
 
 /* footer menu */
+
+footer {
+    clear: both;
+}
+
 .footer-menu {
     overflow: hidden;
     height: 42px;
@@ -103,9 +108,13 @@ a {
 
 /* content */
 
+.content {
+    float: right;
+    width: 70%;
+}
+
 .content-img-box {
     border: 1px solid #c8c8c8;
-    margin-left: 290px;
     padding: 40px 0;
     text-align: center;
 }
@@ -119,7 +128,6 @@ a {
     font-size: 13px;
     color: #2c2c2c;
     line-height: 1.6;
-    margin-left: 290px;
     padding: 30px 20px;
 
 }
