@@ -3,21 +3,15 @@ body {
     background-color: #f9f9f9;
 }
 #container {
-    width: 74%;
-    height: 100%;
+    width: 960px;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0 50px;
     box-shadow: 0 0 10px;
     background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .clearfix:after {
@@ -59,7 +53,7 @@ img {
 
 .content-info-box {
     float: right;
-    width: 70%;
+    width: 675px;
 }
 
 .content-goods-img-box {
@@ -79,7 +73,7 @@ img {
 /* aside goods menu */
 
 .aside-goods-menu {
-    min-width: 25%;
+    width: 240px;
     float: left;
 }
 .aside-goods-menu li{
@@ -103,6 +97,10 @@ img {
 }
 
 /* footer menu */
+
+footer {
+    height: 100px;
+}
 
 .footer-menu {
     background-color: #e1e1e1;
