@@ -1,0 +1,170 @@
+/* main */
+
+body {
+    background: #0c739f url("../img/background.png") repeat-x;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+.main-container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px #031d28;
+}
+
+/* header */
+
+header {
+    position: relative;
+}
+
+.brand-logo {
+    padding-top: 9px;
+    padding-left: 25px;
+}
+
+/* Contact us block */
+
+.contact-us {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #128aa7;
+    line-height: 1.5;
+}
+
+.contact-us a {
+    text-decoration: none;
+    color: #128aa7;
+}
+
+/* Country to travel menu */
+
+.country-to-travel {
+    position: absolute;
+    top: 110px;
+    right: 25px;
+}
+
+.country-to-travel li {
+    float: left;
+}
+
+.country-to-travel a {
+    display: block;
+    width: 60px;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: underline;
+    color: #128aa7;
+}
+
+/* Header main menu */
+
+.header-menu {
+    background-color: #353535;
+    height: 27px;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.header-menu li{
+    float: left;
+}
+
+.header-menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 7px 36px;
+}
+
+.header-sub-menu {
+    position: relative;
+    display: block;
+}
+
+.sub-menu-item {
+    display: none;
+    position: absolute;
+    background-color: #353535;
+    z-index: 1;
+    top: 27px;
+    left: 29px;
+    border-top: 1px solid #000000;
+    box-shadow: 0 5px 5px 2px #333;
+}
+
+.sub-menu-item li a {
+    min-width: 100px;
+    line-height: 1.714;
+    padding: 7px 0 0 7px;
+}
+
+.header-sub-menu:hover .sub-menu-item {
+    display: block;
+}
+
+/* content */
+
+.content {
+    overflow: hidden;
+}
+
+.info {
+    float: left;
+    width: 173px;
+    border-right: 1px solid #c7cacf;
+    border-left: 1px solid #c7cacf;
+    background-color: #edeef0;
+    font-size: 14px;
+    color: #424c43;
+    line-height: 1.714;
+    padding: 0 20px 20000px 15px;
+    margin-bottom: -20000px;
+}
+
+.news-feed {
+    float: left;
+    width: 173px;
+    border-right: 1px solid #c7cacf;
+    border-left: 1px solid #c7cacf;
+    background-color: #edeef0;
+    font-size: 14px;
+    color: #424c43;
+    line-height: 1.714;
+    padding: 0 20px 20000px 15px;
+    margin-bottom: -20000px;
+}
+
+.central-tape {
+    float: left;
+    width: 540px;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #424c43;
+    line-height: 1.714;
+    text-align: justify;
+    padding: 10px 20px 20000px 20px;
+    margin-bottom: -20000px;
+}
+
+.content-column-header {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    color: #ffffff;
+    margin: 10px auto;
+    text-align: center;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
