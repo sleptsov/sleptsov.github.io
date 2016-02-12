@@ -1,0 +1,166 @@
+/* background-image */
+html {
+    background: url('../img/background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* header */
+
+header {
+    height: 36px;
+    background: url("../img/header-background1.png") repeat-x;
+}
+
+.header-menu {
+    float: right;
+    margin-right: 20px;
+}
+
+.header-menu li {
+    float: left;
+}
+
+.header-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 36px;
+    color: #60b5ed;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.header-menu li a:hover {
+    background-color: #4eabda;
+    color: #ffffff;
+}
+
+.header-menu-line {
+    height: 30px;
+    width: 1px;
+    background-color: #56a2dc;
+    margin: 3px 10px;
+}
+
+.menu-element-background {
+    background: url("../img/flag.png") no-repeat left center;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.menu-item-img {
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.menu-item-img img {
+    vertical-align: middle;
+}
+
+.menu-element-special-hover:hover {
+    background-image: linear-gradient(to top, #2e7ac4, #51b1dc);
+}
+
+/* main container body */
+
+.main-container {
+    position: relative;
+}
+
+/* form */
+.form-box {
+    height: 613px;
+    width: 560px;
+    background-color: rgba(0,0,0,0.6);
+    margin: 20px auto;
+    text-align: center;
+}
+
+.brand-name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 60px;
+    border-bottom: 2px solid #c1c1c1;
+    letter-spacing: 1px;
+}
+
+.facebook-btn {
+    width: 275px;
+    height: 35px;
+    background: url("../img/facebook-btn.png");
+    border-radius: 3px;
+    border: none;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.form-horizontal-line {
+    width: 275px;
+    height: 35px;
+    line-height: 35px;
+    margin: 14px auto;
+    font-size: 14px;
+    color: #999999;
+}
+
+.form-horizontal-line hr {
+    display: inline-block;
+    width: 120px;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #666666;
+    background-color: #000000;
+    vertical-align: middle;
+}
+
+.main-form {
+    color: #cccccc;
+}
+
+.input-custom-style {
+    display: block;
+    margin: 14px auto;
+    width: 255px;
+    height: 33px;
+    background-color: #0f0f0f;
+    border: none;
+    border-bottom: 1px solid #484948;
+    font-size: 14px;
+    padding-left: 18px;
+}
+
+.input-custom-style:focus {
+    background-color: #1b5288;
+    box-shadow: 0 0 10px #4d89af;
+}
+
+.updates-and-tips-checkbox {
+    margin: 10px 0 10px -20px;
+    vertical-align: middle;
+}
+
+.submit-btn {
+    display: block;
+    margin: 20px auto;
+    height: 32px;
+    width: 150px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient(to top, #2e7ac4, #50aedb);
+}
+
+.submit-btn:hover {
+    background-image: linear-gradient(to bottom, #2e7ac4, #50aedb);
+    cursor: pointer;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
