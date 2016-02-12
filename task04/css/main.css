@@ -28,6 +28,7 @@ body {
 header {
     position: relative;
     top: 39px;
+    margin-bottom: 39px;
 }
 
 .brand-logo {
