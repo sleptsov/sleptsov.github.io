@@ -13,10 +13,21 @@ body {
     box-shadow: 0 5px 10px #031d28;
 }
 
+/* special search bar, don`t no way we need it */
+
+.browser-search-line-img {
+    height: 39px;
+    position: fixed;
+    background: url("../img/search-backgroung.png") repeat-x;
+    z-index: 1;
+    width: 100%;
+}
+
 /* header */
 
 header {
     position: relative;
+    top: 39px;
 }
 
 .brand-logo {
