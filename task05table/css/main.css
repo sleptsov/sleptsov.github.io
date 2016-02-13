@@ -1,0 +1,46 @@
+body {
+    background-color: #edf6f9;
+}
+.table-box {
+    height: 600px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+.white-border {
+    border: 5px solid #ffffff;
+    width: 490px;
+    height: 570px;
+    position: absolute;
+}
+table {
+    width: 500px;
+    height: 580px;
+}
+
+table, th, td {
+    background-color: #ffffff;
+    border: 5px solid #000000;
+}
+.bg-yellow {
+    background-color: #fff572;
+}
+.bg-red {
+    background-color: #fb5134;
+}
+.bg-black {
+    background-color: #15201c;
+}
+.bg-blue {
+    background-color: #084685;
+}
+.about {
+    text-align: center;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 15px;
+}
+.about h1{
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 5px;
+}
