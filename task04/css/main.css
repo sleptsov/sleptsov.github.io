@@ -1,4 +1,4 @@
-/* main */
+/* MAIN */
 
 body {
     background: #0c739f url("../img/background.png") repeat-x;
@@ -9,8 +9,12 @@ body {
 .main-container {
     width: 1000px;
     margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px #031d28;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 /* special search bar, don`t no way we need it */
@@ -23,20 +27,20 @@ body {
     width: 100%;
 }
 
-/* header */
+/* HEADER */
 
 header {
     position: relative;
-    top: 39px;
-    margin-bottom: 39px;
+    top: 38px;
+    margin-bottom: 38px;
+    background-color: #ffffff;
 }
 
 .brand-logo {
-    padding-top: 9px;
-    padding-left: 25px;
+    padding: 10px 0 0 10px;
 }
 
-/* Contact us block */
+/* CONTACT US BLOCK */
 
 .contact-us {
     position: absolute;
@@ -51,7 +55,7 @@ header {
     color: #128aa7;
 }
 
-/* Country to travel menu */
+/* COUNTRY TO TRAVEL MENU */
 
 .country-to-travel {
     position: absolute;
@@ -72,7 +76,7 @@ header {
     color: #128aa7;
 }
 
-/* Header main menu */
+/* HEADER MAIN MENU */
 
 .header-menu {
     background-color: #353535;
@@ -115,52 +119,47 @@ header {
     padding: 7px 0 0 7px;
 }
 
-.header-sub-menu:hover .sub-menu-item {
+.header-sub-menu:hover
+.sub-menu-item {
     display: block;
 }
 
-/* content */
+/* CONTENT */
 
 .content {
-    overflow: hidden;
-}
-
-.info {
-    float: left;
-    width: 173px;
-    border-right: 1px solid #c7cacf;
-    border-left: 1px solid #c7cacf;
-    background-color: #edeef0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
     font-size: 14px;
     color: #424c43;
     line-height: 1.714;
-    padding: 0 20px 20000px 15px;
-    margin-bottom: -20000px;
+    box-shadow: 0 5px 10px #031d28;
+}
+.info {
+    width: 20%;
+    border-right: 1px solid #c7cacf;
+    border-left: 1px solid #c7cacf;
+    background-color: #edeef0;
 }
 
 .news-feed {
-    float: left;
-    width: 173px;
+    width: 20%;
     border-right: 1px solid #c7cacf;
     border-left: 1px solid #c7cacf;
     background-color: #edeef0;
-    font-size: 14px;
-    color: #424c43;
-    line-height: 1.714;
-    padding: 0 20px 20000px 15px;
-    margin-bottom: -20000px;
 }
 
 .central-tape {
-    float: left;
-    width: 540px;
+    width: 80%;
     background-color: #ffffff;
-    font-size: 14px;
-    color: #424c43;
-    line-height: 1.714;
     text-align: justify;
-    padding: 10px 20px 20000px 20px;
-    margin-bottom: -20000px;
+}
+
+.info,
+.news-feed,
+.central-tape {
+    padding: 10px;
 }
 
 .content-column-header {
@@ -174,9 +173,6 @@ footer {
     color: #ffffff;
     margin: 10px auto;
     text-align: center;
-}
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
+    line-height: 15px;
+    background-color: #0c739f;
 }
