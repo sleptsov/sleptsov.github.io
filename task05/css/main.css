@@ -2,31 +2,29 @@
 html {
     background: url('../img/background.jpg') no-repeat center;
     background-size: cover;
+    background-origin: content-box;
 }
 
 /* header */
 
 header {
-    height: 36px;
-    background: url("../img/header-background1.png") repeat-x;
+    background: url("../img/header-background.png") repeat-x;
 }
 
-.header-menu {
-    float: right;
-    margin-right: 20px;
+.header-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 20px;
 }
 
-.header-menu li {
-    float: left;
-}
-
-.header-menu li a {
-    display: inline-block;
-    text-decoration: none;
+.header-menu ul li a {
+    display: block;
     line-height: 36px;
+    padding: 0 10px;
     color: #60b5ed;
     font-size: 14px;
-    padding: 0 10px;
+    text-decoration: none;
 }
 
 .header-menu li a:hover {
@@ -62,15 +60,9 @@ header {
     background-image: linear-gradient(to top, #2e7ac4, #51b1dc);
 }
 
-/* main container body */
-
-.main-container {
-    position: relative;
-}
-
 /* form */
 .form-box {
-    height: 613px;
+    height: 600px;
     width: 560px;
     background-color: rgba(0,0,0,0.6);
     margin: 20px auto;
@@ -128,7 +120,7 @@ header {
     border: none;
     border-bottom: 1px solid #484948;
     font-size: 14px;
-    padding-left: 18px;
+    padding: 0 0 0 18px;
 }
 
 .input-custom-style:focus {
@@ -137,7 +129,7 @@ header {
 }
 
 .updates-and-tips-checkbox {
-    margin: 10px 0 10px -20px;
+    margin: 10px 0 10px -15px;
     vertical-align: middle;
 }
 
@@ -157,10 +149,4 @@ header {
 .submit-btn:hover {
     background-image: linear-gradient(to bottom, #2e7ac4, #50aedb);
     cursor: pointer;
-}
-
-.clearfix:after {
-    content: '';
-    display: block;
-    clear: both;
 }
