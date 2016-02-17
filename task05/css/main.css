@@ -4,7 +4,7 @@
     position: relative;
     height: 1064px;
     width: 100%;
-    background: url('../img/background.jpg') no-repeat center #60b5ed;
+    background: url('../img/background.jpg') no-repeat center #ffffff;
     background-size: cover;
     background-origin: content-box;
 
@@ -12,7 +12,7 @@
 /* header */
 
 header {
-    background: url("../img/header-background.png") repeat-x #1b5288;
+    background: url("../img/header-background.png") repeat-x #074b88;
 }
 
 .header-menu ul {
