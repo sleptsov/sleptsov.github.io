@@ -1,0 +1,524 @@
+/* MAIN CONTAINER*/
+
+.main-container {
+    width: 909px;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.contacts-and-login-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 54px;
+    width: 909px;
+}
+
+.phone-num-block {
+    font-size: 19px;
+    color: #5e696d;
+    font-family: Arial, Tahoma, sans-serif;
+    background: url('../img/handset.png') no-repeat center left 7px;
+    padding-left: 33px;
+    padding-right: 13px;
+    line-height: 42px;
+}
+
+.phone-num-block img {
+    vertical-align: middle;
+}
+
+/* Login form */
+
+.registration-form-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    width: 495px;
+    height: 25px;
+    background: url('../img/login-box-img.png') no-repeat center left 7px, linear-gradient(to top, #0c3357, #1f6787);
+    border-radius: 3px;
+    border-bottom: 1px solid #596d80;
+    box-shadow: 0 3px 3px 0 rgba(150, 150, 150, 0.75);
+    margin-bottom: 10px;
+}
+
+form {
+    padding-left: 24px;
+}
+
+.registration-form-wrapper input[type=text],
+.registration-form-wrapper input[type=password],
+.registration-form-wrapper input[type=submit],
+.registration-form-wrapper input[type=button] {
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+}
+
+.registration-form-wrapper input[type=text],
+.registration-form-wrapper input[type=password] {
+    width: 108px;
+    height: 14px;
+    border: 1px solid #9BA1A3;
+    border-radius: 1px;
+    padding-left: 5px;
+}
+
+.registration-form-wrapper input[type=text]{
+    margin-right: 2px;
+    margin-top: 3px;
+
+}
+.registration-form-wrapper input[type=submit] {
+    border: none;
+    margin-top: 2px;
+    background: none;
+    cursor: pointer;
+    margin-left: -3px;
+    color: #ffffff;
+}
+
+.registration-form-wrapper a {
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 11px;
+    margin-top: 1px;
+    margin-left: -3px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.registration-form-wrapper a.forgot-password {
+    text-decoration: underline;
+    color: #bfbfbf;
+    margin-left: 25px;
+}
+
+/* Login form End */
+
+.site-nav-links-wrapper {
+    height: 20px;
+    width: 75px;
+    border: 1px solid #c1c8cb;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    margin-left: 17px;
+    box-shadow: 0 3px 3px 0 rgba(150, 150, 150, 0.75);
+}
+
+.site-nav-links-wrapper a {
+    margin-left: 6px;
+}
+
+/* Header main image*/
+
+.header-main-img {
+    height: 237px;
+    width: 909px;
+    background: url("../img/header-main-img.png") no-repeat;
+    margin-bottom: 6px;
+}
+
+/*Header main menu*/
+
+nav.header-main-menu {
+    height: 32px;
+    width: 909px;
+    background-image: linear-gradient(to top, #010101, #4d5663);
+    border-radius: 2px;
+    border: 1px solid #0D1642;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.75);
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #b1bcc0;
+
+}
+
+.header-main-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 131px;
+
+}
+
+.header-main-menu ul li a {
+    display: block;
+    text-transform: uppercase;
+    color: #b1bcc0;
+    border-radius: 15px;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 13px;
+}
+
+.header-main-menu ul li a:hover {
+    background-image: linear-gradient(to top, #0d3458, #1f6787);
+    border-bottom: 1px solid #09233b;
+    border-top: 1px solid #25617b;
+    color: #ffffff;
+}
+
+.basket {
+    line-height: 28px;
+    margin-right: 26px;
+}
+
+.basket span {
+    font-size: 11px;
+}
+
+.basket img {
+    vertical-align: middle;
+}
+.basket .goods-price {
+    color: #0d5a8f;
+    font-size: 12px;
+
+}
+
+/* SEARCH BOXES */
+
+.search-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 13px;
+}
+
+.search-box-wrapper > section {
+    border: 1px solid #b8b8b9;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.75);
+    height: 132px;
+}
+
+.search-by-car {
+    width: 413px;
+    display: table;
+}
+
+.search-by-car form{
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.search-by-tires {
+    width: 192px;
+    display: table;
+}
+
+ .search-by-tires form{
+    padding: 0 13px;
+}
+
+.cell {
+    display: table-cell;
+    padding-bottom: 3px;
+}
+
+.row {
+    display: table-row;
+}
+
+.search-by-while {
+    width: 266px;
+}
+
+.search-box-wrapper label {
+    font-size: 10px;
+    font-family: Arial, Tahoma, sans-serif;
+    display: block;
+    width: 72px;
+}
+
+.search-by-tires label {
+    width: 54px;
+}
+
+.search-by-tires h2,
+.search-by-while h2{
+    margin-left: 24px;
+}
+
+.search-by-while form {
+    display: flex;
+}
+
+.while-bonus {
+    padding-left: 20px;
+    border-left: 1px solid #bdc6ca;
+}
+
+.search-by-car h2 {
+    margin-bottom: -10px;
+}
+
+.search-by-car select{
+    display: block;
+    width: 74px;
+}
+
+.text-muted {
+    font-size: 8px;
+    color: #77858b;
+}
+
+.text-for-search-headings {
+    font-family: "Arial Black", Arial, sans-serif;
+    color: #154468;
+    font-size: 12px;
+}
+
+.season-type {
+    display: block;
+    width: 50px;
+}
+
+.search-by-disk-btn {
+    margin-top: 7px;
+    margin-right: 8px;
+}
+
+.search-by-car-btn {
+    margin-right: -15px;
+}
+
+.search-box-wrapper select {
+    min-width: 42px;
+}
+
+.submit-btn-for-search-box {
+    border: none;
+    background-color: #ffffff;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: Arial, Tahoma, sans-serif;
+    font-style: italic;
+    color: #154467;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.brand-images-gallery {
+    height: 100px;
+    background: url("../img/brand-logos.png") center no-repeat;
+}
+
+/* Catalog */
+
+.main-content {
+    width: 527px;
+    background-image: linear-gradient(to top, #93a7b0, #e5e7e8);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.catalog-wrapper {
+    max-width: 184px;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 13px;
+    color: #114165;
+}
+
+.catalog-wrapper ul {
+    margin-left: 52px;
+    margin-top: -11px;
+    margin-bottom: -6px;
+    list-style-type: circle;
+
+}
+
+div.catalog-brands {
+    margin-top: 2px;
+    padding-left: 2px;
+    margin-bottom: 14px;
+}
+
+.catalog-wrapper ul li a {
+    color: #465961;
+    line-height: 25px;
+}
+
+.catalog-wrapper ul li a:hover {
+    font-family: Arial, Tahoma sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: #0c3256;
+    text-decoration: underline;
+}
+
+.catalog {
+    height: 25px;
+    width: 181px;
+    border: 1px solid #8b979c;
+    text-transform: uppercase;
+    border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 13px;
+    line-height: 25px;
+}
+
+.catalog-item {
+    height: 26px;
+    width: 146px;
+    padding-left: 3px;
+    border-radius: 13px;
+    line-height: 26px;
+}
+
+.catalog-item-brands {
+    margin-left: -9px;
+    width: 131px;
+}
+
+.catalog img {
+    vertical-align: middle;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+
+.catalog-labels-layout{
+    display: flex;
+    flex-direction: column;
+    margin-top: -9px;
+    margin-bottom: 7px;
+}
+
+.catalog-labels-layout label {
+    line-height: 25px;
+}
+
+.search-by-brand {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #e5e9ea;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #d5d5d5;
+    background-image: linear-gradient(to top, #0d3458, #1f6787);
+    border: none;
+    line-height: 25px;
+    width: 80px;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-left: 2px;
+}
+
+
+/* MAIN CONTENT*/
+
+.tire-box {
+    text-align: center;
+    font-family: "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 15px;
+    width: 139px;
+    padding: 16px 29px 10px 0;
+}
+
+.tire-box h2 {
+    color: #206988;
+}
+
+.tire-box h3{
+    font-size: 13px;
+    color: #1f2528;
+}
+
+.tire-box figcaption {
+    font-family: Arial, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #114165;
+    font-size: 17px;
+}
+
+.tire-img-box {
+    width: 137px;
+    height: 116px;
+    border-radius: 7px;
+    border: 1px solid #A4AEB1;
+    background-color: #ffffff;
+    padding: 6px 0;
+    margin-bottom: 2px;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    height: 104px;
+    background-color: #213a4d;
+    border: 1px solid #242a3c;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+nav.footer-nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav.footer-nav-menu li {
+    color: #bec6c9;
+    line-height: 33px;
+
+}
+
+nav.footer-nav-menu li a {
+    display: block;
+    color: #bec6c9;
+
+    font-size: 12px;
+    line-height: 33px;
+    padding: 0 14px;
+}
+
+nav.footer-nav-menu li a:hover {
+    color: #52abcb;
+}
+
+.site-author {
+    color: #7f4740;
+    font-size: 10px;
+    text-align: center;
+    margin: 6px 0;
+}
+
+.site-author a {
+    color: #7f4740;
+
+}
