@@ -1,0 +1,81 @@
+.about-our-company-block {
+    background-color: #745083;
+}
+
+.browser-happy {
+    text-align: center;
+    line-height: 2;
+}
+
+.header ul {
+    float: none;
+    display: inline-block;
+}
+
+.header li {
+    float: none;
+    display: inline;
+}
+
+.logo-box-img {
+    float: none;
+    display: inline-block;
+    padding: 70px 200px 150px 20px;
+}
+
+.header ul li a {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 32px;
+    height: 32px;
+    margin: 0 30px 0 0;
+}
+
+.header ul li a:hover{
+    height: 29px;
+    border-bottom: 3px solid #edbfff;
+
+}
+
+.slider-circles {
+    display: none;
+}
+
+.circles {
+    display: none;
+}
+
+.footer ul{
+    display: inline-block;
+}
+
+.footer li{
+    display: inline;
+}
+
+.footer ul li a {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 32px;
+    margin: 0 60px 0 0;
+    font-size: 20px;
+}
+
+.footer-content {
+    float: none;
+    display: inline-block;
+    padding: 0 0 0 90px;
+}
+
+.article-about-company a {
+    height: 30px;
+}
+
+.article-about-company a:hover {
+    height: 27px;
+    border-bottom: 3px solid #edbfff;
+}
+
+.slider-box {
+    background: url("../img/ie-header-bg.png");
+}
