@@ -2,8 +2,22 @@ body {
     font-family: "League Gothic Regular", Arial, sans-serif;
 }
 
-a {
+a, h2, h3 {
     text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:checked {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 .header {
@@ -23,6 +37,11 @@ a {
 
 .logo-inner {
     padding: 70px 0 0 0;
+}
+
+.q li a{
+    padding: 0;
+    margin: 0 10px;
 }
 
 /* SLIDER */
@@ -49,11 +68,197 @@ a {
     font-size: 18px;
     color: #ffffff;
     line-height: 24px;
-    max-height: 100px;
+    max-height: 98px;
     overflow: hidden;
 }
 
 .slider-wrapper img {
     max-width: 100%;
     height: auto;
+}
+
+
+/* ABOUT COMPANY BLOCK */
+
+.about-our-company-block {
+    border-bottom: 1px solid #0d151b;
+    border-top: 1px solid #33253a;
+    background-image: linear-gradient(to top, #322539, #745083);
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgb(0, 0, 0);
+    box-sizing: border-box;
+
+}
+
+.article-about-company {
+    padding: 0 50px 20px 50px;
+}
+
+.about-our-company-inner-box {
+    box-sizing: border-box;
+    padding: 50px 0;
+}
+
+.article-img {
+    width: 30px;
+    height: 70px;
+    background: url("../img/stripes.png")no-repeat;
+    background-position: 0 25px;
+}
+
+.article-about-company-logo-2 {
+    background-position: -40px 25px;
+}
+
+.article-about-company-logo-3 {
+    background-position: -77px 25px;
+
+}
+
+.article-about-company h2 {
+    font-size: 30px;
+}
+
+.article-about-company p {
+    padding: 5px 0 0 0;
+    max-height: 145px;
+    overflow: hidden;
+}
+
+.article-about-company a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgb(0, 0, 0);
+    padding-top: 10px;
+}
+
+.article-about-company a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* BLOGS AND UPDATES */
+
+.blog-and-updates-block {
+    background-color: #f9f9f9;
+    box-shadow: inset 0 15px 15px -10px rgba(0, 0, 0, 0.8);
+}
+
+.blog-and-updates-inner-box {
+    box-sizing: border-box;
+    padding: 110px 10px 90px 10px;
+}
+
+.blog-face-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background: url("../img/blog-face-img.png") center no-repeat;
+    background-size: cover;
+    margin: 30px 0 0 -5px;
+}
+
+.blog-content {
+    background: url("../img/blog-background.png");
+    background-size: 100% 100%;
+    margin-left: 20px;
+    box-sizing: border-box;
+    padding: 25px 10px 25px 30px;
+
+}
+
+.blog-content a {
+    color: #edbfff;
+}
+
+.blog-content p {
+    max-height: 195px;
+    overflow: hidden;
+    color: #454545;
+}
+
+/* BLOG SLIDER SWITCHERS */
+
+
+.circles {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.circles input[type=radio] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.updates-box ul li{
+    background: url("../img/li-img.png") left no-repeat;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 15px 10px 63px;
+    line-height: 24px;
+}
+
+.updates-box a{
+    font-size: 18px;
+    float: right;
+    color: #454545;
+}
+
+.updates-box p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-bolt {
+    font-weight: bold;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* BRANDS LOGOS BLOCK */
+
+.logo {
+    height: 70px;
+    width: 105px;
+    box-sizing: border-box;
+    float: left;
+    margin: 25px;
+}
+
+.logo-1 {
+    background: url("../img/brand-logos.png") 17px 0 no-repeat;
+}
+
+.logo-2 {
+    background: url("../img/brand-logos.png") -120px 0 no-repeat;
+}
+
+.logo-3 {
+    background: url("../img/brand-logos.png") -251px 0 no-repeat;
+}
+
+.logo-4 {
+    background: url("../img/brand-logos.png") -385px 0 no-repeat;
+}
+
+.logo-5 {
+    background: url("../img/brand-logos.png") -527px 0 no-repeat;
+}
+
+.logo-6 {
+    background: url("../img/brand-logos.png") -685px 0  no-repeat;
+}
+
+.brands-logo-block {
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #f9f9f9;
 }

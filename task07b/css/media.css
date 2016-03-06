@@ -46,6 +46,7 @@
     .slider-wrapper p {
         font-size: 12px;
         line-height: 16px;
+        margin: 0 0 60px 0;
     }
 
 }
@@ -63,6 +64,7 @@
     }
     .slider-wrapper h3 {
         font-size: 12px;
+        margin: 0 0 60px 0;
     }
     .slider-wrapper p {
         display: none;
