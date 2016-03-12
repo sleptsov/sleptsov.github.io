@@ -14,6 +14,6 @@ function task02() {
     if (x) {
         alert("Welcome, " + searchValue + "!")
     } else {
-        alert("There is no " + searchValue + " in array " + arr);
+        alert("There is no " + searchValue + " in array " + "[" + arr + "]");
     }
 }
