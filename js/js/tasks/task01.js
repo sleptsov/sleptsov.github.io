@@ -7,8 +7,9 @@ function task01(){
     function pow(x, degree) {
         if (isNaN(x) || isNaN(degree)){
             console.log("Use ONLY numbers! ( ˘︹˘ )");
-            return;
+            return;// stop function is input wrong
         } else {
+            // math rules for different degrees
             switch (true){
                 case (degree == 0):
                     result = 1;

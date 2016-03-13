@@ -1,14 +1,16 @@
 function task02() {
-    var arr = [];
-    var n = +prompt("Enter number of elements in array", "5");
-    for (var i = 0; i < n; i++) {
-        arr[i] = prompt("Enter " + i + " element of array", "Jack");
-    }
-    var searchValue = prompt("Type full name to search", "Jack");
+    var arr = []; // init empty array
     var x = false;
-    for (var j = 0; j < arr.length; j++) {
-        if (arr[j] === searchValue) {
-            x = true;
+    do {
+        var item = prompt("Enter new item in array (or click Close/Cancel button to stop)","");
+        arr.push(item);    // fill arr with new items
+    } while (item !='' && item != null);
+    arr.pop();// cut the last item of arr, which can be '' or null
+    console.log(arr);
+    var searchValue = prompt("Type value to search", "Jack");
+    for (var i = 0; i < arr.length; i++) {
+        if (arr.indexOf(searchValue) != -1){
+            x = true;// search for input value
         }
     }
     if (x) {
@@ -16,4 +18,5 @@ function task02() {
     } else {
         alert("There is no " + searchValue + " in array " + "[" + arr + "]");
     }
+    console.log(searchValue);
 }
