@@ -11,7 +11,7 @@ var pageGenerator = {
     numberOfanswers: 3,
     createTestContainer: function() {
         this.testContainer.classList.add('test-container');
-        this.testContainer.setAttribute('method', 'post');
+        this.testContainer.setAttribute('method', 'get');
         this.testContainer.setAttribute('action', '#');
         var testBox = document.getElementById('test');
         testBox.appendChild(this.testContainer);
