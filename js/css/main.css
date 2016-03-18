@@ -14,3 +14,17 @@
 .submitBtnBox {
     text-align: center;
 }
+
+#timer-box {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 0 20px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#timer-box h1{
+    font-weight: bold;
+}
