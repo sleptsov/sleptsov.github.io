@@ -9,16 +9,19 @@ function startPause(){
         running = true;
         increment();
         document.getElementById('startPause').innerHTML = 'Pause';
+        document.getElementById('circle-btn').classList.remove('disabled');
     } else {
         running = false;
         document.getElementById('startPause').innerHTML = 'Resume';
+        document.getElementById('circle-btn').classList.add('disabled');
     }
 }
 
 function reset() {
     clearInterval(timer);
-    time = 0;
+    time = hours = mins = secs = ms = 0;
     running = false;
+    document.getElementById('circle-btn').classList.add('disabled');
     document.getElementById('startPause').innerHTML = 'Start';
     document.getElementById('timer').innerHTML = '00:00:00.0';
     var circleBox = document.getElementById('circle-box');
@@ -43,11 +46,13 @@ function increment() {
 }
 
 function circle() {
-    var circleBox = document.getElementById('circle-box');
-    var circle = document.createElement('h4');
-    circle.innerHTML = 'circle ' + counter + ' - ' + hours + ':' + mins + ':' + secs + '.' + ms;
-    circleBox.appendChild(circle);
-    counter++;
+    if (running) {
+        var circleBox = document.getElementById('circle-box');
+        var circle = document.createElement('h4');
+        circle.innerHTML = 'circle ' + counter + ' - ' + hours + ':' + mins + ':' + secs + '.' + ms;
+        circleBox.appendChild(circle);
+        counter++;
+    }
 }
 
 function addZero(x,n) {
