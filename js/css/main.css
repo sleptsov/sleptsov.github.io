@@ -28,3 +28,17 @@
 .timer-layout h1{
     font-weight: bold;
 }
+
+.circle-item {
+    animation-name: circle-animation;
+    animation-duration: .3s;
+}
+
+@keyframes circle-animation {
+    from {
+        font-size: 0;
+    }
+    to {
+        font-size: 18px;
+    }
+}

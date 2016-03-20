@@ -74,6 +74,7 @@ function Stopwatch(elem) {
         if (watch.isOn) {
             var circleItem = document.createElement('h4');
             circleItem.innerHTML = 'circle ' + counter + ' - ' + timeFormatter(time);
+            circleItem.classList.add('circle-item');
             circleBox.appendChild(circleItem);
             counter++;
         }
@@ -105,6 +106,7 @@ function Stopwatch(elem) {
 
     this.reset = function() {
         time = 0;
+        counter = 1;
         update();
         clearCircles();
     };
