@@ -34,11 +34,48 @@
     animation-duration: .3s;
 }
 
+.timer-scale-up {
+    animation: timer-scale-up .3s;
+}
+.timer-scale-down {
+    animation: timer-scale-down .3s;
+}
+
 @keyframes circle-animation {
     from {
         font-size: 0;
     }
     to {
         font-size: 18px;
+    }
+}
+
+@keyframes timer-scale-up {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        transform: scale(1.3);
+
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+@keyframes timer-scale-down {
+    0% {
+        transform: scale(1);
+
+    }
+    50% {
+        transform: scale(.8);
+
+    }
+    100% {
+        transform: scale(1);
+
     }
 }

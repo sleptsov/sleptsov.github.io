@@ -12,11 +12,14 @@ startPauseBtn.addEventListener('click', function(){
         watch.stop();
         startPauseBtn.innerHTML = 'Resume';
         circleBtn.classList.add('disabled');
-
+        timer.classList.add('timer-scale-down');
     } else {
         watch.start();
         startPauseBtn.innerHTML = 'Pause';
         circleBtn.classList.remove('disabled');
+        timer.classList.remove('timer-scale-down');
+        timer.classList.add('timer-scale-up');
+
     }
 });
 
@@ -64,10 +67,24 @@ function Stopwatch(elem) {
         if (seconds.length < 2) {
             seconds = '0' + seconds;
         }
-        while (milliseconds.length < 3) {
+        if (seconds == '00') {
+            addTimerAnimation();
+        } else {
+            removeTimerAnimation();
+        }
+
+            while (milliseconds.length < 3) {
             milliseconds = '0' + milliseconds;
         }
         return minutes + ' : ' + seconds + ' . ' + milliseconds;
+    }
+
+    function addTimerAnimation(){
+        timer.classList.add('timer-scale-up');
+    }
+
+    function removeTimerAnimation(){
+        timer.classList.remove('timer-scale-up');
     }
 
     function circle() {
@@ -109,6 +126,7 @@ function Stopwatch(elem) {
         counter = 1;
         update();
         clearCircles();
+        removeTimerAnimation();
     };
 
     this.getCircle = function(){
