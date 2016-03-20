@@ -18,8 +18,6 @@ startPauseBtn.addEventListener('click', function(){
         startPauseBtn.innerHTML = 'Pause';
         circleBtn.classList.remove('disabled');
         timer.classList.remove('timer-scale-down');
-        timer.classList.add('timer-scale-up');
-
     }
 });
 
