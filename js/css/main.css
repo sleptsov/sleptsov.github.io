@@ -1,3 +1,5 @@
+/*Custom Styles for Task 03-04*/
+
 .test-container {
     width: 50%;
     margin: 20px auto;
@@ -7,13 +9,32 @@
     border-radius: 5px;
 }
 
-.answer-list-items {
+ul, .answer-list-items {
     list-style: none;
 }
 
 .submitBtnBox {
     text-align: center;
 }
+
+.test-container-scale-up {
+    animation: form-scale-up .5s;
+}
+
+@keyframes form-scale-up {
+    from {
+        transform: scale(0);
+        opacity: 0;
+
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+/* Custom Styles for Task05-06*/
 
 .timer-layout {
     width: 100%;
@@ -84,4 +105,56 @@
     .test-container {
         width: 100%
     }
+}
+
+/* Custom Styles for Task 07-08*/
+
+.tabs{
+    display: block;
+}
+.tabs > div{
+    padding-top: 10px;
+}
+.tabs ul{
+    margin: 0;
+    padding: 0;
+}
+.tabs ul:after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 3px;
+    background: #ADD8E6;
+}
+.tabs ul li{
+    margin: 0 2px 0 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    background: #e9eaeb;
+    color: #707070;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tabs ul li.active, .tabs ul li.active:hover{
+    background: #ADD8E6;
+    color: #fff;
+}
+.tabs ul li:hover{
+    background: #d6d6d7;
+}
+.tabs__content {
+    display: none;
+}
+.tabs__content.active {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+}
+.sing-up-form {
+    width: 500px;
+    margin: 20px;
 }

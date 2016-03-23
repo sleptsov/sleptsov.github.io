@@ -10,7 +10,7 @@ var pageGenerator = {
     numberOfquestions: 3,
     numberOfanswers: 3,
     createTestContainer: function() {
-        this.testContainer.classList.add('test-container');
+        this.testContainer.classList.add('test-container', 'test-container-scale-up');
         this.testContainer.setAttribute('method', 'get');
         this.testContainer.setAttribute('action', '#');
         var testBox = document.getElementById('test');
