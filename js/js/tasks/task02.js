@@ -1,16 +1,23 @@
 function task02() {
     var arr = []; // init empty array
     var x = false;
-    for (i = 0; i < 5; i++) {
-        var item = prompt("Enter " + i + " item in array","");
-        arr.push(item);
-    }
-    /*do {
+    var t;
+    do {
         var item = prompt("Enter new item in array (or click Close/Cancel button to stop)","");
         arr.push(item);    // fill arr with new items
+        t = true;
+        if (arr.length == 5) {
+             t = confirm("Your rich max length of Array we need in this task. Continue?");
+            console.log("Continue status", t);
+            if(t == false) {
+                break;
+            }
+        }
     } while (item !='' && item != null);
-    arr.pop();// cut the last item of arr, which can be '' or null*/
-    console.log(arr);
+    if (t == true) {
+        arr.pop();// cut the last item of arr, which can be '' or null
+    }
+    console.log("Final version of an Array", arr);
     var searchValue = prompt("Type value to search", "Jack");
     for (var i = 0; i < arr.length; i++) {
         if (arr.indexOf(searchValue) != -1){
@@ -22,5 +29,5 @@ function task02() {
     } else {
         alert("There is no " + searchValue + " in array " + "[" + arr + "]");
     }
-    console.log(searchValue);
+    console.log("Saerch value", searchValue);
 }

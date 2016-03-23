@@ -109,6 +109,8 @@ ul, .answer-list-items {
 
 /* Custom Styles for Task 07-08*/
 
+/*Tabs*/
+
 .tabs{
     display: block;
 }
@@ -154,7 +156,25 @@ ul, .answer-list-items {
     box-shadow: inset 0 0 8px rgba(0, 0, 0, .3);
     border-radius: 3px;
 }
-.sing-up-form {
+.sing-up-form, .details-form {
     width: 500px;
     margin: 20px;
+}
+
+.details-form .form-control {
+    display: inline;
+    width: auto;
+}
+
+/*Tooltips*/
+
+.my-tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #696969;
+    background-color: #6F6F6F;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    padding: 10px;
+    color:#fff;
 }

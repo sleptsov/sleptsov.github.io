@@ -39,6 +39,7 @@ var pageGenerator = {
                 answerItemBox.setAttribute('class', 'checkbox');
                 answerItemCheckBox.setAttribute('type', 'checkbox');
                 answerItemCheckBox.setAttribute('name', 'question' + (i + 1) +'answer' + (j + 1));
+                answerItemCheckBox.setAttribute('value', 'question' + (i + 1) +'answer' + (j + 1));
                 questionListItem.appendChild(answerList);
                 answerList.appendChild(answerListItems);
                 answerListItems.appendChild(answerItemBox);

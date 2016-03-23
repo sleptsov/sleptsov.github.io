@@ -88,8 +88,8 @@
             <div class="col-md-12">
                 <div class="tabs">
                     <ul class="tabs__caption">
-                        <li class="active">First tab</li>
-                        <li>Second tab</li>
+                        <li class="active">Tooltips v.1</li>
+                        <li>Tooltips v.2</li>
                         <li>One more tab</li>
                     </ul>
                     <div>
@@ -98,25 +98,41 @@
                                 <div class="form-group">
                                     <label for="firstName" class="col-sm-3 control-label">First name</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="firstName" placeholder="First name">
+                                        <input type="text"
+                                               class="form-control"
+                                               id="firstName"
+                                               placeholder="First name"
+                                               data-my-tooltip="Enter your First name here">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="secondName" class="col-sm-3 control-label">Second name</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="secondName" placeholder="Second name">
+                                        <input type="text"
+                                               class="form-control"
+                                               id="secondName"
+                                               placeholder="Second name"
+                                               data-my-tooltip="Enter your Second name here">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="col-sm-3 control-label">Email</label>
                                     <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <input type="email"
+                                               class="form-control"
+                                               id="email"
+                                               placeholder="Email"
+                                               data-my-tooltip="Enter your valid email here">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="password" class="col-sm-3 control-label">Password</label>
                                     <div class="col-sm-9">
-                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                        <input type="password"
+                                               class="form-control"
+                                               id="password"
+                                               placeholder="Password"
+                                               data-my-tooltip="Create password">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -130,7 +146,39 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-3 col-sm-9">
-                                        <button type="submit" class="btn btn-default">Sign in</button>
+                                        <button type="submit"
+                                                class="btn btn-default"
+                                                data-my-tooltip="Sing in">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tabs__content">
+                            <form class="form-horizontal details-form" method="get" action="#">
+                                <div class="form-group">
+                                    <label for="country" class="col-sm-3 control-label">Country</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="country" placeholder="Country">
+                                        <span class="my-tooltip-inline">Provide your country</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state" class="col-sm-3 control-label">State</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="state" placeholder="State">
+                                        <span class="my-tooltip-inline">Provide your state</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city" class="col-sm-3 control-label">City</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" class="form-control" id="city" placeholder="City">
+                                        <span class="my-tooltip-inline">Provide your city</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-3 col-sm-9">
+                                        <button type="submit" class="btn btn-default">Save</button>
                                     </div>
                                 </div>
                             </form>
@@ -142,8 +190,6 @@
                                 torquent per conubia nostra, per inceptos himenaeos. Sed feugiat finibus tortor, eu
                                 accumsan magna aliquet in. Nullam in luctus magna. Pellentesque lorem arcu, sagittis
                                 eu dictum ultrices, posuere eu enim.</p>
-                        </div>
-                        <div class="tabs__content">
                             <p>Nunc augue purus, porta at scelerisque eu, condimentum ut risus. Aenean elementum arcu
                                 dolor, ut bibendum nunc sagittis non. Cras quis eros eu purus luctus efficitur at quis
                                 tortor. Donec quis accumsan diam, ut aliquam massa. Sed maximus tristique pellentesque.
