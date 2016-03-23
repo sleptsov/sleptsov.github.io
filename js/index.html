@@ -94,11 +94,12 @@
                     </ul>
                     <div>
                         <div class="tabs__content active">
-                            <form class="form-horizontal sing-up-form" method="get" action="#">
+                            <form class="form-horizontal sing-up-form" method="post" action="#">
                                 <div class="form-group">
                                     <label for="firstName" class="col-sm-3 control-label">First name</label>
                                     <div class="col-sm-9">
                                         <input type="text"
+                                               name="firstName"
                                                class="form-control"
                                                id="firstName"
                                                placeholder="First name"
@@ -109,6 +110,7 @@
                                     <label for="secondName" class="col-sm-3 control-label">Second name</label>
                                     <div class="col-sm-9">
                                         <input type="text"
+                                               name="secondName"
                                                class="form-control"
                                                id="secondName"
                                                placeholder="Second name"
@@ -119,6 +121,7 @@
                                     <label for="email" class="col-sm-3 control-label">Email</label>
                                     <div class="col-sm-9">
                                         <input type="email"
+                                               name="email"
                                                class="form-control"
                                                id="email"
                                                placeholder="Email"
@@ -129,6 +132,7 @@
                                     <label for="password" class="col-sm-3 control-label">Password</label>
                                     <div class="col-sm-9">
                                         <input type="password"
+                                               name="password"
                                                class="form-control"
                                                id="password"
                                                placeholder="Password"
@@ -139,7 +143,7 @@
                                     <div class="col-sm-offset-3 col-sm-9">
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox"> Remember me
+                                                <input type="checkbox" name="rememberMe"> Remember me
                                             </label>
                                         </div>
                                     </div>
@@ -154,7 +158,7 @@
                             </form>
                         </div>
                         <div class="tabs__content">
-                            <form class="form-horizontal details-form" method="get" action="#">
+                            <form class="form-horizontal details-form" method="post" action="#">
                                 <div class="form-group">
                                     <label for="country" class="col-sm-3 control-label">Country</label>
                                     <div class="col-sm-9">
