@@ -157,7 +157,7 @@ ul, .answer-list-items {
     border-radius: 3px;
 }
 .sing-up-form, .details-form {
-    width: 500px;
+    max-width: 500px;
     margin: 20px;
 }
 
@@ -177,4 +177,7 @@ ul, .answer-list-items {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
     padding: 10px;
     color:#fff;
+}
+.my-tooltip-inline {
+    display: none;
 }
