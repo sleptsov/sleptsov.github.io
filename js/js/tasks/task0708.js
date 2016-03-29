@@ -17,16 +17,16 @@ $().ready(function(){
 
    //Tooltip v.2
    $('.details-form :input').focus(function(){
-      $(this).next().fadeIn(1000);
+      $(this).next().fadeIn(500);
    })
    .blur(function(){
-      $(this).next().fadeOut(1000);
+      $(this).next().fadeOut(500);
    });
    $('#show-help').click(function(e){
       e.preventDefault();
-      $('.my-tooltip-inline').fadeToggle(1000);
+      $('.my-tooltip-inline').fadeToggle(500);
       $(this).text(function(i, text){
-         return text === "Show help" ? "Hide help" : "Show help";
+         return text === "Show help" ? "Hide help" : "Show help"; // it`s magic, but it works
       });
    })
 });
