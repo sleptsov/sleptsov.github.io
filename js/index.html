@@ -6,11 +6,14 @@
     <link rel="icon" href="favicon.ico">
     <script src="js/libs/jquery-1.12.1.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.jcarousel.min.js"></script>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
+
     <div class="jumbotron">
         <div class="container">
             <div class="row">
@@ -18,202 +21,293 @@
                     <h1>GoIT JavaScript course</h1>
                 </div>
                 <div class="col-md-4 col-sx-12 text-center">
-                    <img src="img/js.png" alt="JS logo" class="img-thumbnail">
+                    <img src="img/js.png" alt="JS logo" class="img-thumbnail" id="logo-img" title="Click to open all tasks">
                 </div>
             </div>
         </div>
     </div>
-    <hr>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <h3>Task 01</h3>
-                <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_01-02" target="_blank">here</a>
-                    or click button below and check Console to see the result</p>
-                <button class="btn btn-primary" onclick="task01()">Run task</button>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <h3>Task 02</h3>
-                <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_01-02" target="_blank">here</a>
-                    or click button below and follow few steps to see the result</p>
-                <button class="btn btn-primary" onclick="task02()">Run task</button>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row" >
-            <div class="col-md-12" id="test">
-                <h3>Task 03-04</h3>
-                <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_03-04" target="_blank">here</a>
-                    or click button below and take a test</p>
-                <button class="btn btn-primary" onclick="task03()">Run task</button>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-xs-12">
-                <h3>Task 05-06</h3>
-                <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_05-06" target="_blank">here</a></p>
-                <p class="hidden-xs">Note: you can use keyboard</p>
-                <p class="hidden-xs">S - start/pause<br>
-                    C - circle<br>
-                    R - reset</p>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div id="timer-box" class="timer-layout">
-                    <h3>Stopwatch</h3>
-                    <h1 id="timer">00 : 00 . 000</h1>
-                    <div class="btn-group btn-group-lg" role="group">
-                        <button type="button" class="btn btn-default" id="start-pause-btn">Start</button>
-                        <button type="button" class="btn btn-default disabled" id="circle-btn">Circle</button>
-                        <button type="button" class="btn btn-default" id="reset-btn">Reset</button>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading01-02">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse01-02" aria-expanded="true" aria-controls="collapse01-02">
+                            Task 01-02
+                        </a>
+                        <span class="label label-success pull-right">Done</span>
+                    </h4>
+                </div>
+                <div id="collapse01-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01-02">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <h3>Task 01</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_01-02" target="_blank">here</a>
+                                        or click button below and check Console to see the result</p>
+                                    <button class="btn btn-primary" onclick="task01()">Run task</button>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <h3>Task 02</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_01-02" target="_blank">here</a>
+                                        or click button below and follow few steps to see the result</p>
+                                    <button class="btn btn-primary" onclick="task02()">Run task</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="circle-box"></div>
                 </div>
             </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3>Task 07-08</h3>
-                <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_07-08" target="_blank">here</a></p>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading03-04">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse03-04" aria-expanded="true" aria-controls="collapse03-04">
+                            Task 03-04
+                        </a>
+                        <span class="label label-success pull-right">Done</span>
+                    </h4>
+                </div>
+                <div id="collapse03-04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03-04">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row" >
+                                <div class="col-md-12" id="test">
+                                    <h3>Task 03-04</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_03-04" target="_blank">here</a>
+                                        or click button below and take a test</p>
+                                    <button class="btn btn-primary" onclick="task03()">Run task</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="tabs">
-                    <ul class="tabs__caption">
-                        <li class="active">Tooltips v.1</li>
-                        <li>Tooltips v.2</li>
-                        <li>One more tab</li>
-                    </ul>
-                    <div>
-                        <div class="tabs__content active">
-                            <form class="form-horizontal sing-up-form" method="post" action="#">
-                                <div class="form-group">
-                                    <label for="firstName" class="col-sm-3 control-label">First name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text"
-                                               name="firstName"
-                                               class="form-control"
-                                               id="firstName"
-                                               placeholder="First name"
-                                               data-my-tooltip="Enter your First name here">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading05-06">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse05-06" aria-expanded="true" aria-controls="collapse05-06">
+                            Task 05-06
+                        </a>
+                        <span class="label label-success pull-right">Done</span>
+                    </h4>
+                </div>
+                <div id="collapse05-06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05-06">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <h3>Task 05-06</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_05-06" target="_blank">here</a></p>
+                                    <p class="hidden-xs">Note: you can use keyboard</p>
+                                    <p class="hidden-xs">S - start/pause<br>
+                                        C - circle<br>
+                                        R - reset</p>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div id="timer-box" class="timer-layout">
+                                        <h3>Stopwatch</h3>
+                                        <h1 id="timer">00 : 00 . 000</h1>
+                                        <div class="btn-group btn-group-lg" role="group">
+                                            <button type="button" class="btn btn-default" id="start-pause-btn">Start</button>
+                                            <button type="button" class="btn btn-default disabled" id="circle-btn">Circle</button>
+                                            <button type="button" class="btn btn-default" id="reset-btn">Reset</button>
+                                        </div>
+                                        <div id="circle-box"></div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="secondName" class="col-sm-3 control-label">Second name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text"
-                                               name="secondName"
-                                               class="form-control"
-                                               id="secondName"
-                                               placeholder="Second name"
-                                               data-my-tooltip="Enter your Second name here">
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading07-08">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse07-08" aria-expanded="true" aria-controls="collapse07-08">
+                            Task 07-08
+                        </a>
+                        <span class="label label-success pull-right">Done</span>
+                    </h4>
+                </div>
+                <div id="collapse07-08" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading07-08">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Task 07-08</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_07-08" target="_blank">here</a></p>
                                 </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-3 control-label">Email</label>
-                                    <div class="col-sm-9">
-                                        <input type="email"
-                                               name="email"
-                                               class="form-control"
-                                               id="email"
-                                               placeholder="Email"
-                                               data-my-tooltip="Enter your valid email here">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-sm-3 control-label">Password</label>
-                                    <div class="col-sm-9">
-                                        <input type="password"
-                                               name="password"
-                                               class="form-control"
-                                               id="password"
-                                               placeholder="Password"
-                                               data-my-tooltip="Create password">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-9">
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="rememberMe"> Remember me
-                                            </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="tabs">
+                                        <ul class="tabs__caption">
+                                            <li class="active">Tooltips v.1</li>
+                                            <li>Tooltips v.2</li>
+                                            <li>One more tab</li>
+                                        </ul>
+                                        <div>
+                                            <div class="tabs__content active">
+                                                <form class="form-horizontal sing-up-form" method="post" action="#">
+                                                    <div class="form-group">
+                                                        <label for="firstName" class="col-sm-3 control-label">First name</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text"
+                                                                   name="firstName"
+                                                                   class="form-control"
+                                                                   id="firstName"
+                                                                   placeholder="First name"
+                                                                   data-my-tooltip="Enter your First name here">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="secondName" class="col-sm-3 control-label">Second name</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text"
+                                                                   name="secondName"
+                                                                   class="form-control"
+                                                                   id="secondName"
+                                                                   placeholder="Second name"
+                                                                   data-my-tooltip="Enter your Second name here">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email" class="col-sm-3 control-label">Email</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="email"
+                                                                   name="email"
+                                                                   class="form-control"
+                                                                   id="email"
+                                                                   placeholder="Email"
+                                                                   data-my-tooltip="Enter your valid email here">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="password" class="col-sm-3 control-label">Password</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="password"
+                                                                   name="password"
+                                                                   class="form-control"
+                                                                   id="password"
+                                                                   placeholder="Password"
+                                                                   data-my-tooltip="Create password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-3 col-sm-9">
+                                                            <div class="checkbox">
+                                                                <label>
+                                                                    <input type="checkbox" name="rememberMe"> Remember me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-3 col-sm-9">
+                                                            <button type="submit"
+                                                                    class="btn btn-default"
+                                                                    data-my-tooltip="Sing in">Sign in</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tabs__content">
+                                                <form class="form-horizontal details-form" method="post" action="#">
+                                                    <div class="form-group">
+                                                        <label for="country" class="col-sm-3 control-label">Country</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="country" placeholder="Country">
+                                                            <span class="my-tooltip-inline">Provide your country</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="state" class="col-sm-3 control-label">State</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="state" placeholder="State">
+                                                            <span class="my-tooltip-inline">Provide your state</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="city" class="col-sm-3 control-label">City</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="email" class="form-control" id="city" placeholder="City">
+                                                            <span class="my-tooltip-inline">Provide your city</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-3 col-sm-3">
+                                                            <button type="submit" class="btn btn-default">Save</button>
+                                                        </div>
+                                                        <div class="col-sm-6 pull-right">
+                                                            <button class="btn btn-default btn-xs" id="show-help">Show help</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="tabs__content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi nec sapien ornare
+                                                    dictum. Phasellus fermentum libero sit amet nulla finibus vehicula. Donec lobortis justo
+                                                    ac nisi fringilla, sit amet porta nisl finibus. Class aptent taciti sociosqu ad litora
+                                                    torquent per conubia nostra, per inceptos himenaeos. Sed feugiat finibus tortor, eu
+                                                    accumsan magna aliquet in. Nullam in luctus magna. Pellentesque lorem arcu, sagittis
+                                                    eu dictum ultrices, posuere eu enim.</p>
+                                                <p>Nunc augue purus, porta at scelerisque eu, condimentum ut risus. Aenean elementum arcu
+                                                    dolor, ut bibendum nunc sagittis non. Cras quis eros eu purus luctus efficitur at quis
+                                                    tortor. Donec quis accumsan diam, ut aliquam massa. Sed maximus tristique pellentesque.
+                                                    Praesent commodo aliquet aliquam. Suspendisse purus tortor, vulputate a aliquam vitae,
+                                                    interdum eu urna. Vivamus lacinia vitae sapien vel rhoncus. Cras at erat mi. Nam facilisis
+                                                    turpis vitae sem iaculis, vel iaculis turpis blandit.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-9">
-                                        <button type="submit"
-                                                class="btn btn-default"
-                                                data-my-tooltip="Sing in">Sign in</button>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                        <div class="tabs__content">
-                            <form class="form-horizontal details-form" method="post" action="#">
-                                <div class="form-group">
-                                    <label for="country" class="col-sm-3 control-label">Country</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="country" placeholder="Country">
-                                        <span class="my-tooltip-inline">Provide your country</span>
-                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading09-10">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse09-10" aria-expanded="true" aria-controls="collapse09-10">
+                            Task 09-10
+                        </a>
+                        <span class="label label-warning pull-right">In progress</span>
+                    </h4>
+                </div>
+                <div id="collapse09-10" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading09-10">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Task 09-10</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_09-10" target="_blank">here</a></p>
                                 </div>
-                                <div class="form-group">
-                                    <label for="state" class="col-sm-3 control-label">State</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="state" placeholder="State">
-                                        <span class="my-tooltip-inline">Provide your state</span>
-                                    </div>
+                            </div>
+                            <div class="jcarousel-wrapper">
+                                <div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+                                    <ul>
+                                        <li><img src="img/carousel/slide-1.jpg" width="600" height="400" alt="Slade-1"></li>
+                                        <li><img src="img/carousel/slide-2.jpg" width="600" height="400" alt="Slide-2"></li>
+                                        <li><img src="img/carousel/slide-3.jpg" width="600" height="400" alt="Slide-3"></li>
+                                    </ul>
                                 </div>
-                                <div class="form-group">
-                                    <label for="city" class="col-sm-3 control-label">City</label>
-                                    <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="city" placeholder="City">
-                                        <span class="my-tooltip-inline">Provide your city</span>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-sm-offset-3 col-sm-3">
-                                        <button type="submit" class="btn btn-default">Save</button>
-                                    </div>
-                                    <div class="col-sm-6 pull-right">
-                                        <button class="btn btn-default btn-xs" id="show-help">Show help</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tabs__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi nec sapien ornare
-                                dictum. Phasellus fermentum libero sit amet nulla finibus vehicula. Donec lobortis justo
-                                ac nisi fringilla, sit amet porta nisl finibus. Class aptent taciti sociosqu ad litora
-                                torquent per conubia nostra, per inceptos himenaeos. Sed feugiat finibus tortor, eu
-                                accumsan magna aliquet in. Nullam in luctus magna. Pellentesque lorem arcu, sagittis
-                                eu dictum ultrices, posuere eu enim.</p>
-                            <p>Nunc augue purus, porta at scelerisque eu, condimentum ut risus. Aenean elementum arcu
-                                dolor, ut bibendum nunc sagittis non. Cras quis eros eu purus luctus efficitur at quis
-                                tortor. Donec quis accumsan diam, ut aliquam massa. Sed maximus tristique pellentesque.
-                                Praesent commodo aliquet aliquam. Suspendisse purus tortor, vulputate a aliquam vitae,
-                                interdum eu urna. Vivamus lacinia vitae sapien vel rhoncus. Cras at erat mi. Nam facilisis
-                                turpis vitae sem iaculis, vel iaculis turpis blandit.</p>
+                                <a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                                <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+                                <div class="jcarousel-pagination"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
+    <script src="js/tasks/task-common.js"></script>
     <script src="js/tasks/task01.js"></script>
     <script src="js/tasks/task02.js"></script>
     <script src="js/tasks/task0304.js"></script>
     <script src="js/tasks/task0506.js"></script>
     <script src="js/tasks/task0708.js"></script>
+    <script src="js/tasks/task0910.js"></script>
 </body>
 </html>
