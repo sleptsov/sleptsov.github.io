@@ -193,3 +193,9 @@ ul, .answer-list-items {
     padding: 10px;
     color:#fff;
 }
+
+/*Task 09-10 Custom Styles*/
+
+legend a {
+    color: #333;
+}

@@ -7,9 +7,13 @@
     <script src="js/libs/jquery-1.12.1.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/jquery.jcarousel.min.js"></script>
+    <script src="js/libs/jquery.nice-select.min.js"></script>
+    <script src="js/libs/icheck.min.js"></script>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/libs/nice-select.css">
+    <link rel="stylesheet" href="css/libs/iCheck/square/blue.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
@@ -37,7 +41,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse01-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01-02">
+                <div id="collapse01-02" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading01-02">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -67,7 +71,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse03-04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03-04">
+                <div id="collapse03-04" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading03-04">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row" >
@@ -91,7 +95,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse05-06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05-06">
+                <div id="collapse05-06" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading05-06">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -129,7 +133,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse07-08" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading07-08">
+                <div id="collapse07-08" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading07-08">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -296,6 +300,140 @@
                                 <a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
                                 <div class="jcarousel-pagination"></div>
                             </div>
+                        </div>
+                        <div class="container-fluid">
+                            <form>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+                                        <fieldset>
+                                            <legend><a href="https://github.com/hernansartorio/jquery-nice-select" target="_blank">jQuery Nice Select Plugin</a></legend>
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <select class="wide">
+                                                        <option data-display="Select option">Nothing</option>
+                                                        <option value="1">Some option</option>
+                                                        <option value="2">Another option</option>
+                                                        <option value="3">Potato option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+                                        <fieldset>
+                                            <legend><a href="http://icheck.fronteed.com/" target="_blank">iCheck Plugin</a></legend>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <h4>Do you like:</h4>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="pets" value="cats"> Cats
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="pets" value="dogs"> Dogs
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" name="pets" value="hedgehogs"> Hedgehogs
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <h4>Choose color:</h4>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="fav-color" value="red"> Red
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="fav-color" value="blue"> Blue
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="fav-color" value="green"> Green
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 col-xs-12">
+                                    <div class="form-group">
+                                        <fieldset>
+                                            <legend>only CSS</legend>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <h4>Skills:</h4>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input
+                                                                    type="checkbox"
+                                                                    class="i-check-destroy"
+                                                                    name="skill"
+                                                                    value="html"> HTML
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   class="i-check-destroy"
+                                                                   name="skill"
+                                                                   value="css"> CSS
+                                                        </label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   class="i-check-destroy"
+                                                                   name="skill"
+                                                                   value="js"> JavaScript
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <h4>Plugins:</h4>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio"
+                                                                   class="i-check-destroy"
+                                                                   name="plugin"
+                                                                   value="jq"> jQuery
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio"
+                                                                   class="i-check-destroy"
+                                                                   name="plugin"
+                                                                   value="bs"> Bootstrap
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio"
+                                                                   class="i-check-destroy"
+                                                                   name="plugin"
+                                                                   value="pure"> Pure
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

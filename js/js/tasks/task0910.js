@@ -32,5 +32,17 @@
                 $(this).removeClass('active');
             })
             .jcarouselPagination();
+
+        $('select').niceSelect(); //Nice Select Plugin
+
+        // iCheck Plugin
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            radioClass: 'iradio_square-blue'
+            //increaseArea: '20%' // optional
+        });
+
+        $('input.i-check-destroy').iCheck('destroy');
+
     });
 })(jQuery);
