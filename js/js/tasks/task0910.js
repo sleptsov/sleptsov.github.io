@@ -1,5 +1,6 @@
 (function($) {
     $(function() {
+        //Carousel
         $('[data-jcarousel]').each(function() {
             var el = $(this);
             el.jcarousel(el.data());
@@ -33,7 +34,8 @@
             })
             .jcarouselPagination();
 
-        $('select').niceSelect(); //Nice Select Plugin
+        //Nice Select Plugin
+        $('select').niceSelect();
 
         // iCheck Plugin
         $('input').iCheck({
@@ -41,8 +43,19 @@
             radioClass: 'iradio_square-blue'
             //increaseArea: '20%' // optional
         });
-
+        // clear iCheck Plugin from other checkbox
         $('input.i-check-destroy').iCheck('destroy');
+
+
+        // My-Dropdown menu
+        $( '.my-dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(200);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(200);
+            }
+        );
 
     });
 })(jQuery);
