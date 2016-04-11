@@ -19,7 +19,7 @@ $().ready(function(){
 
    //Tooltip v.2
    $('.details-form :input').focus(function(){
-      $(this).next().fadeIn(300);
+      $(this).next().delay(800).fadeIn(300);
    })
    .blur(function(){
       $(this).next().fadeOut(300);
