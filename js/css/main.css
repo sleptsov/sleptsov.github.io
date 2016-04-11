@@ -185,6 +185,7 @@ ul, .answer-list-items {
 }
 .my-tooltip-inline {
     display: none;
+    position: relative;
     margin: 0 0 0 10px;
     border: 1px solid #696969;
     background-color: #6F6F6F;
@@ -192,6 +193,15 @@ ul, .answer-list-items {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
     padding: 10px;
     color:#fff;
+}
+
+.my-tooltip-inline:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    border: 10px solid transparent;
+    border-right: 10px solid #6F6F6F;
 }
 
 /*Task 09-10 Custom Styles*/
@@ -340,12 +350,15 @@ nav li li ul {
 }
 
 nav a {
+    position: relative;
     color: #fff;
     text-decoration: none;
     display: block;
     line-height: 40px;
+    box-sizing: border-box;
     padding: 0 12px;
     margin: 0 12px;
+    transition: padding 0.3s;
 }
 
 nav a:hover,
@@ -354,6 +367,9 @@ nav a:active {
     color: rgb(50 ,50 ,50);
     text-decoration: none;
     background: rgba(169 ,169 ,169, .7);
+    padding: 0 20px 0 20px;
+    transition: padding .3s;
+
 }
 
 nav li li a {
