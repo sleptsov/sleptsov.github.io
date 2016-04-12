@@ -328,6 +328,10 @@ nav ul li {
     position:relative;
 }
 
+nav > ul > li {
+    margin: 0 10px;
+}
+
 nav li ul {
     background:rgba(128,128,128, .7);
     position:absolute;
@@ -335,18 +339,17 @@ nav li ul {
     top:40px;
     width:200px;
     z-index: 1;
-    border-radius: 3px;
 }
+
 nav li li {
-    position:relative;
-    margin:0;
-    display:block;
+    position: relative;
+    display: block;
 }
+
 nav li li ul {
     position:absolute;
     top:0;
-    left:200px;
-    margin:0;
+    left: 200px;
 }
 
 nav a {
@@ -356,9 +359,17 @@ nav a {
     display: block;
     line-height: 40px;
     box-sizing: border-box;
-    padding: 0 12px;
-    margin: 0 12px;
+    padding: 0 10px;
     transition: padding 0.3s;
+}
+
+nav a:hover:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 20px solid transparent;
+    border-left: 20px solid #6F6F6F;
 }
 
 nav a:hover,
@@ -367,15 +378,14 @@ nav a:active {
     color: rgb(50 ,50 ,50);
     text-decoration: none;
     background: rgba(169 ,169 ,169, .7);
-    padding: 0 20px 0 20px;
-    transition: padding .3s;
+    padding-left: 25px;
+    transition: all .3s;
 
 }
 
 nav li li a {
     border-bottom: 1px solid rgba(128, 128, 128, .7);
-    margin:0 10px;
-    padding:0;
+    padding: 0 10px;
 
 }
 nav li li:last-child a {
@@ -387,9 +397,9 @@ ul.sub-menu {
 }
 
 .content {
-    width:80%;
-    max-width:1000px;
-    margin:0 auto;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .arrow-style {
