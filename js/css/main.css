@@ -369,7 +369,7 @@ nav a:hover:after {
     left: 0;
     top: 0;
     border: 20px solid transparent;
-    border-left: 20px solid #6F6F6F;
+    border-left: 20px solid #6b6b6b;
 }
 
 nav a:hover,
