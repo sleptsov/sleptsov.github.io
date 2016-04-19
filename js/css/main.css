@@ -405,3 +405,56 @@ ul.sub-menu {
 .arrow-style {
     font-size: 10px;
 }
+
+/*MY AWESOME CAROUSEL*/
+
+.carousel-list {
+    width: 10000px;
+    position: relative;
+}
+
+.my-carousel-left-control,
+.my-carousel-right-control {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    opacity: .3;
+}
+
+.my-carousel-left-control:hover,
+.my-carousel-right-control:hover {
+    cursor: pointer;
+    color: #fff;
+    opacity: .6;
+}
+
+.my-carousel-left-control {
+    left: 0;
+}
+
+.my-carousel-right-control {
+    right: 0;
+}
+
+.carousel-element {
+    float: left;
+}
+
+.carousel-element img{
+    width: 100%;
+    height: auto;
+}
+
+.my-carousel-wrapper {
+    position: relative;
+    width: 560px;
+    margin: 30px auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 10px solid #ddd;
+    border-radius: 5px;
+}
+
+.carousel-list li {
+    margin-left: -40px;
+}

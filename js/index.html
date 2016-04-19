@@ -9,6 +9,9 @@
     <script src="js/libs/jquery.jcarousel.min.js"></script>
     <script src="js/libs/jquery.nice-select.min.js"></script>
     <script src="js/libs/icheck.min.js"></script>
+    <script src="js/libs/tmpl.js"></script>
+    <script src="js/libs/lodash.min.js"></script>
+    <script src="js/libs/jquery.my-awesome-carousel.js"></script>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -40,7 +43,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse01-02" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading01-02">
+                <div id="collapse01-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01-02">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -70,7 +73,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse03-04" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading03-04">
+                <div id="collapse03-04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03-04">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row" >
@@ -94,7 +97,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse05-06" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading05-06">
+                <div id="collapse05-06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05-06">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -132,7 +135,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse07-08" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading07-08">
+                <div id="collapse07-08" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading07-08">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -269,7 +272,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse09-10" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading09-10">
+                <div id="collapse09-10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading09-10">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -452,6 +455,103 @@
                     </div>
                 </div>
             </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading11-12">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11-12" aria-expanded="true" aria-controls="collapse11-12">
+                            Task 11-12
+                        </a>
+                        <span class="label label-success pull-right">Done</span>
+                    </h4>
+                </div>
+                <div id="collapse11-12" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading11-12">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3>Task 11-12</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_11-12" target="_blank">here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div>
+                                        <button class="btn btn-primary" id="render-tmpl">Render</button> with John Resig JavaScript Micro-Templating
+                                    </div>
+                                    <div class="simple-tmpl-box">
+                                        <script type="text/template" id="simple-tmpl">
+                                            <div class="user-info-wrapper">
+                                                <% for (var i = 0; i < data.length; i++) { %>
+                                                <div class="user-box">
+                                                    <hr>
+                                                    <img src="<%= data[i].image%>" alt="Img" class="img-circle img-thumbnail pull-right">
+                                                    <h3><%= data[i].firstName + "&nbsp;" + data[i].secondName %></h3>
+                                                    <p><%= data[i].education%></p>
+                                                    <p>Reasons to learn Frontend:</p>
+                                                    <ul style="list-style-type: disc">
+                                                        <% for (var key in data[i]) { %>
+                                                        <% if (key == 'reasonsForGoIT') { %>
+                                                        <% for (reason in data[i][key]) { %>
+                                                        <li><%= data[i][key][reason] %></li>
+                                                        <% }; %>
+                                                        <% }; %>
+                                                        <% }; %>
+                                                    </ul>
+                                                    <p>Phone: <%= data[i].phone%></p>
+                                                    <p><a href="<%= data[i].profileFB%>" target="_blank">Facebook account</a></p>
+                                                    <p>Feedback: <%= data[i].feedback%></p>
+                                                    <div>
+                                                        <button class="btn btn-default btn-xs col-xs-offset-11 col-xs-1 hide-user">Hide</button>
+                                                    </div>
+                                                    <hr>
+                                                </div>
+                                                <% }; %>
+                                            </div>
+                                        </script>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div>
+                                        <button class="btn btn-primary" id="render-LoDash">Render</button> with LoDash library
+                                    </div>
+                                    <div class="simple-tmplLd-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <hr>
+                            <h3 class="text-center">My awesome carousel</h3>
+                            <div class="my-carousel-wrapper">
+                                <ul class="carousel-list">
+                                    <li class="carousel-element">
+                                        <figure>
+                                            <img src="img/carousel/slide-7.jpg" alt="Slide 1" width="600" height="400">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel-element">
+                                        <figure>
+                                            <img src="img/carousel/slide-8.jpg" alt="Slide 2" width="600" height="400">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </li>
+                                    <li class="carousel-element">
+                                        <figure>
+                                            <img src="img/carousel/slide-9.jpg" alt="Slide 3" width="600" height="400">
+                                            <figcaption></figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <div class="my-carousel-left-control"><span class="glyphicon glyphicon-chevron-left"></span></div>
+                                <div class="my-carousel-right-control"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/tasks/task-common.js"></script>
@@ -461,5 +561,7 @@
     <script src="js/tasks/task0506.js"></script>
     <script src="js/tasks/task0708.js"></script>
     <script src="js/tasks/task0910.js"></script>
+    <script src="js/tasks/task12.js"></script>
+    <script src="js/tasks/task11.js"></script>
 </body>
 </html>
