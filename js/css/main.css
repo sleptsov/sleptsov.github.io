@@ -458,3 +458,38 @@ ul.sub-menu {
 .carousel-list li {
     margin-left: -40px;
 }
+
+
+/*MODAL styles*/
+
+.my-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.my-modal-message {
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 50%;
+    margin: 0 0 0 -150px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.skill-test-box {
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.my-skill-test-radio{
+    margin-left: 20px;
+}
