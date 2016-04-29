@@ -464,7 +464,7 @@
                         <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse11-12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11-12">
+                <div id="collapse11-12" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading11-12">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -552,57 +552,6 @@
                     </div>
                 </div>
             </div>
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="heading13-14">
-                    <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13-14" aria-expanded="true" aria-controls="collapse13-14">
-                            Task 13-14
-                        </a>
-                        <span class="label label-success pull-right">Done</span>
-                    </h4>
-                </div>
-                <div id="collapse13-14" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading13-14">
-                    <div class="panel-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h3>Task 13-14</h3>
-                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_13-14" target="_blank">here</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid">
-                            <script type="text/template" id="skill-test-tmpl">
-                                <div class="well">
-                                    <form method="get" action="" id="skills-test">
-                                        <fieldset>
-                                            <legend>
-                                                Skills test
-                                            </legend>
-                                            <% for (var i = 0; i < data.length; i++) { %>
-                                            <div class="form-group">
-                                                <h5><%= data[i].title%></h5>
-                                                <h4><%= data[i].question%></h4>
-                                                <% for (var key in data[i].answers) { %>
-                                                <div class="radio my-skill-test-radio">
-                                                    <label>
-                                                        <input class="answer-radio" type="radio" name="quiz-<%= data[i].title.slice(-1)%>" value="<%= data[i].answers[key].id%>"> <%= data[i].answers[key].var%>
-                                                    </label>
-                                                </div>
-                                                <% }; %>
-                                                <hr>
-                                            </div>
-                                            <% }; %>
-                                        </fieldset>
-                                        <button type="button" class="btn btn-default" id="check-test-btn">Check results</button>
-                                    </form>
-                                </div>
-                            </script>
-                            <div class="skill-test-box"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <script src="js/tasks/task-common.js"></script>
@@ -614,7 +563,5 @@
     <script src="js/tasks/task0910.js"></script>
     <script src="js/tasks/task12.js"></script>
     <script src="js/tasks/task11.js"></script>
-    <script src="js/tasks/task11.js"></script>
-    <script src="js/tasks/task1314.js"></script>
 </body>
 </html>
