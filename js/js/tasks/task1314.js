@@ -122,12 +122,12 @@ function saveToLocalStorage(data){
         // check if already saved before
         if (localStorage.testQuestions == undefined){
             localStorage.setItem('testQuestions', testQuestions);
-            console.log('Object successfully saved to localStorage');
+            //console.log('Object successfully saved to localStorage');
         } else {
-            console.log('Object is already saved to localStorage');
+            //console.log('Object is already saved to localStorage');
         }
     } else {
-        console.log("Update your browser! LocalStorage is not supported!");
+        //console.log("Update your browser! LocalStorage is not supported!");
     }
 }
 
@@ -206,8 +206,8 @@ $(function(){
         } else {
             modalDialog('The test is failed! Try again!');
         }
-        console.log('Answers ', givenAnswers);
-        console.log('Correct results ', correctResults);
+        //console.log('Answers ', givenAnswers);
+        //console.log('Correct results ', correctResults);
     }
 
     function clearTest() {

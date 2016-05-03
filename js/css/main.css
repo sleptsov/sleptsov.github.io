@@ -493,3 +493,30 @@ ul.sub-menu {
 .my-skill-test-radio{
     margin-left: 20px;
 }
+
+/*TASK15 custom styles*/
+
+
+.google-logo {
+    text-align: center;
+    margin: 10px;
+}
+
+.google-logo img{
+    max-width: 30%;
+    height: auto;
+}
+
+.google-task form{
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.google-task input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+}
+
