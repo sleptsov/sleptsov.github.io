@@ -12,6 +12,8 @@
     <script src="js/libs/tmpl.js"></script>
     <script src="js/libs/lodash.min.js"></script>
     <script src="js/libs/jquery.my-awesome-carousel.js"></script>
+    <script src="http://www.google.com/jsapi?key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg"
+            type="text/javascript"></script>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/carousel.css">
@@ -609,7 +611,7 @@
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15-16" aria-expanded="true" aria-controls="collapse15-16">
                             Task 15-16
                         </a>
-                        <span class="label label-warning pull-right">In progress</span>
+                        <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
                 <div id="collapse15-16" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading15-16">
@@ -626,9 +628,21 @@
                             <div class="google-logo">
                                 <img src="img/googlelogo_color_272x92dp.png">
                             </div>
-                            <form>
-                                <input placeholder="Введите поисковый запрос или URL" id="target">
-                            </form>
+                            <div class="search-wrapper">
+                                <script>
+                                    (function() {
+                                        var cx = '004079035263324720048:mgyugxd1pi0';
+                                        var gcse = document.createElement('script');
+                                        gcse.type = 'text/javascript';
+                                        gcse.async = true;
+                                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                        var s = document.getElementsByTagName('script')[0];
+                                        s.parentNode.insertBefore(gcse, s);
+                                    })();
+                                </script>
+                                <div class="gcse-searchbox"></div>
+                            </div>
+                            <div class="gcse-searchresults"></div>
                         </div>
                         <hr>
                         <div class="container-fluid">
@@ -653,5 +667,6 @@
     <script src="js/tasks/task1314.js"></script>
     <script src="js/tasks/task15.js"></script>
     <script src="js/tasks/task16.js"></script>
+
 </body>
 </html>

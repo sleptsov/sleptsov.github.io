@@ -507,16 +507,26 @@ ul.sub-menu {
     height: auto;
 }
 
-.google-task form{
-    text-align: center;
-    max-width: 500px;
-    margin: 10px auto;
+.search-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+}
+.gsc-clear-button,
+.gsc-orderby-container,
+.gcsc-branding-text,
+.gcsc-branding-img-noclear,
+.gcsc-branding-text.gcsc-branding-text-name{
+    display: none;
 }
 
-.google-task input{
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
-    padding: 10px;
+.gsc-input input.gsc-input {
+    font-size: 17px;
+    height: 30px;
+}
+
+.gsc-search-button input.gsc-search-button {
+    height: 30px;
+    font-size: 14px;
+    font-weight: normal;
 }
 
