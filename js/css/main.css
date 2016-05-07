@@ -530,3 +530,25 @@ ul.sub-menu {
     font-weight: normal;
 }
 
+.riffsy-logo {
+    display: inline;
+    margin: 10px;
+}
+
+.riffsy-logo img{
+    max-width: 30%;
+    height: auto;
+}
+#riffsy-search {
+    width: auto;
+    display: inline;
+}
+
+#riffsy-results {
+    text-align: center;
+}
+
+.riffsy-img {
+    margin: 10px;
+}
+
