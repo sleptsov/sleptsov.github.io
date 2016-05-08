@@ -1,0 +1,26 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "GoIT course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleptsov/sleptsov.github.io.git"
+  },
+  "author": "Sleptsov Denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sleptsov/sleptsov.github.io/issues"
+  },
+  "homepage": "https://github.com/sleptsov/sleptsov.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

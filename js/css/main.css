@@ -552,3 +552,6 @@ ul.sub-menu {
     margin: 10px;
 }
 
+.riffsy-search-box button {
+    margin-top: -3px;
+}
