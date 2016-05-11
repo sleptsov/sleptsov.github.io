@@ -1,0 +1,19 @@
+$font-stack:    Helvetica, sans-serif;
+
+body {
+  font-family: $font-stack;
+}
+
+.welcome {
+  color: #343434;
+  text-align: center;
+  .img-wrapper {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+      img {
+        max-width: 100%;
+      }
+  }
+
+}

@@ -1,0 +1,1 @@
+function Say(o){console.log("Gulp test "+o)}console.log("Done! Wow"),Sad("Gary");
