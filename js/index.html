@@ -686,6 +686,51 @@
                 </div>
             </div>
         </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading23-24">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse23-24" aria-expanded="true" aria-controls="collapse23-24">
+                            Task 23-24
+                        </a>
+                        <span class="label label-warning pull-right">In work</span>
+                    </h4>
+                </div>
+                <div id="collapse23-24" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading23-24">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <h3>Task 23-24</h3>
+                                    <p>Description <a href="https://github.com/goit-fe/markup_fe2o/tree/master/js_23-24" target="_blank">here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <script id="wrapper-template" type="text/template">
+                                <div class="todo-wraper">
+                                    <div class="controls">
+                                        <input type="text" class="item-value">
+                                        <button class="item-add">Add</button>
+                                    </div>
+                                    <ul class="item-list"></ul>
+                                </div>
+                            </script>
+                            <script type="text/template" id="list-template">
+                                <% for (var i = 0; i < data.length; i++) { %>
+                                    <li>
+                                        <span data-value="<%= data[i] %>" class="displayed-item"><%= data[i] %></span>
+                                        <input value="<%= data[i] %>" class="item-edit-field" type="text">
+                                        <span data-value="<%= data[i] %>" class="item-delete"> &#10006; </span>
+                                    </li>
+                                <% }; %>
+                            </script>
+                            <div id="todo-task">
+                                <h3>ToDo List</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/tasks/task-common.js"></script>
@@ -701,6 +746,8 @@
     <script src="js/tasks/task1314.js"></script>
     <script src="js/tasks/task15.js"></script>
     <script src="js/tasks/task16.js"></script>
+    <script src="js/tasks/task23-24/model.js"></script>
+
     <!--<script src="dist/scripts/script.main.min.js"></script>-->
 
 </body>

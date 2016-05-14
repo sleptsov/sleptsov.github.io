@@ -555,3 +555,12 @@ ul.sub-menu {
 .riffsy-search-box button {
     margin-top: -3px;
 }
+
+/*Task 23-24 Custom styles*/
+
+.item-edit-field {
+    display: none;
+}
+.item-delete {
+    cursor: pointer;
+}
