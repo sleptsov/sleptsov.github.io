@@ -26,4 +26,3 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./build/'));
 });
 
-gulp.watch('css/**/*.*', ['styles']);

@@ -13,6 +13,7 @@
     <script src="js/libs/tmpl.js"></script>
     <script src="js/libs/lodash.min.js"></script>
     <script src="js/libs/jquery.my-awesome-carousel.js"></script>
+    <script data-main="js/tasks/task23-24/app" src="js/tasks/task23-24/require.js"></script>
     <!--<link rel="stylesheet" href="dist/styles/styles.min.css">-->
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -692,10 +693,10 @@
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse23-24" aria-expanded="true" aria-controls="collapse23-24">
                             Task 23-24
                         </a>
-                        <span class="label label-warning pull-right">In work</span>
+                        <span class="label label-success pull-right">Done</span>
                     </h4>
                 </div>
-                <div id="collapse23-24" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading23-24">
+                <div id="collapse23-24" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23-24">
                     <div class="panel-body">
                         <div class="container-fluid">
                             <div class="row">
@@ -707,26 +708,32 @@
                         </div>
                         <div class="container-fluid">
                             <script id="wrapper-template" type="text/template">
-                                <div class="todo-wraper">
+                                <div class="todo-wrapper">
+                                    <div class="todo-logo">
+                                        <img src="img/todo-logo.png">
+                                        <span>ToDo List</span>
+                                    </div>
                                     <div class="controls">
-                                        <input type="text" class="item-value">
-                                        <button class="item-add">Add</button>
+                                        <input type="text" class="item-value" placeholder="Create new task...">
+                                        <button class="item-add">&#10010;</button>
                                     </div>
                                     <ul class="item-list"></ul>
                                 </div>
                             </script>
                             <script type="text/template" id="list-template">
                                 <% for (var i = 0; i < data.length; i++) { %>
-                                    <li>
-                                        <span data-value="<%= data[i] %>" class="displayed-item"><%= data[i] %></span>
-                                        <input value="<%= data[i] %>" class="item-edit-field" type="text">
-                                        <span data-value="<%= data[i] %>" class="item-delete"> &#10006; </span>
+                                    <li class="item-row">
+                                        <div class="item-row-inner">
+                                            <span data-value="<%= data[i] %>" class="displayed-item"><%= data[i] %></span>
+                                            <input value="<%= data[i] %>" class="item-edit-field" type="text">
+                                        </div>
+                                        <div class="item-delete-wrapper">
+                                            <span data-value="<%= data[i] %>" class="item-delete">&nbsp;&#10006;</span>
+                                        </div>
                                     </li>
                                 <% }; %>
                             </script>
-                            <div id="todo-task">
-                                <h3>ToDo List</h3>
-                            </div>
+                            <div id="todo-task"></div>
                         </div>
                     </div>
                 </div>
@@ -746,7 +753,7 @@
     <script src="js/tasks/task1314.js"></script>
     <script src="js/tasks/task15.js"></script>
     <script src="js/tasks/task16.js"></script>
-    <script src="js/tasks/task23-24/model.js"></script>
+    <!--<script src="js/tasks/task23-24/all.js"></script>-->
 
     <!--<script src="dist/scripts/script.main.min.js"></script>-->
 
