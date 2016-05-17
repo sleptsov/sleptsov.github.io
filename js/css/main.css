@@ -661,3 +661,10 @@ ul.sub-menu {
 .item-add:hover {
     background-color: #346392;
 }
+
+
+/* Task 20 custom styles */
+
+#task20-box {
+    word-wrap: break-word;
+}
