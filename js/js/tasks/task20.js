@@ -21,7 +21,6 @@ $(function(){
         _(t).forEach(function(item){
             _(item).forEach(function (i) {
                 c.push(i);
-                return c;
             });
         });
         var x = _.uniq(c);
