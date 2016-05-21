@@ -133,7 +133,6 @@ function saveToLocalStorage(data){
 
 saveToLocalStorage(questions);
 
-
 $(function(){
 
     //Get object from localStorage
