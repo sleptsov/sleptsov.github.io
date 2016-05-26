@@ -1,0 +1,17 @@
+@import "base/_reset";
+@import "base/_layout";
+@import "_variables";
+@import "_mixins";
+@import "sections/_header";
+@import "sections/_footer";
+@import "sections/_content";
+@import "sections/_buttons";
+@import "sections/_slider";
+@import "_media";
+
+body {
+  @include site-main-text;
+}
+
+
+

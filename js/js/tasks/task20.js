@@ -14,15 +14,7 @@ $(function(){
 
     function skillsArr(data){
         var desc = '1. Sorted array of all unique skills from data.json';
-        var t = _.map(data, 'skills');
-        var c = [];
-        _(t).forEach(function(item){
-            _(item).forEach(function (i) {
-                c.push(i);
-            });
-        });
-        var skillsArrRes = _.uniq(c);
-        skillsArrRes.sort();
+        var skillsArrRes = (_.uniq(_.flattenDeep(_.map(data, 'skills')))).sort();
         //console.log(desc , skillsArrRes);
         renderArrResults(skillsArrRes, desc);
     }

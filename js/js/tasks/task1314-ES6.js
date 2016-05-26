@@ -24,4 +24,4 @@
 
 
 app.saveToLocalStorage([{name: 'Den', age: 30}, {name: 'Sad', age: 30}]);
-console.log(app.getFromLocalStorage('task20Data'));
+//console.log(app.getFromLocalStorage('task20Data'));

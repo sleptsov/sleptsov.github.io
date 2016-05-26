@@ -1,0 +1,34 @@
+
+/* ========== HEADER ========== */
+
+.header {
+  background: url("/images/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+  @include content-block;
+}
+
+.site-auth {
+  padding: 20px 0;
+}
+
+.header-slogan {
+  font-size: 30px;
+}
+
+.header-slogan__text {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.header-slogan__text--uppercase {
+  text-transform: uppercase;
+}
+
+.header-slogan__text--normal {
+  font: $font-roboto;
+  font-size: 18px;
+  text-transform: none;
+  padding: 20px 35px;
+}

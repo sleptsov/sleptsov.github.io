@@ -1,0 +1,25 @@
+
+.btn {
+  @include site-main-text;
+  @include button;
+}
+
+.btn--no-border {
+  border: none;
+}
+
+.btn--red {
+  background-color: $btn-main-color;
+  border-color: $btn-main-color;
+}
+
+.btn--red-transparent {
+  border-color: $btn-main-color;
+  color: $btn-main-color;
+}
+
+.how-it-works__btn {
+  @include button;
+  @include button-steps;
+  height: 30px;
+}

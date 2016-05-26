@@ -1,0 +1,43 @@
+@mixin site-main-text {
+  font: $font-montserrat;
+  color: #fff;
+}
+
+@mixin button {
+  outline: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 36px;
+  cursor: pointer;
+  min-width: 90px;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+@mixin button-steps {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 10px;
+  background-color: $btn-main-color;
+  border: none;
+}
+
+@mixin content-block {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+@mixin input {
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font: $font-roboto;
+  color: $text-color;
+  padding: 15px;
+  margin: 10px;
+}

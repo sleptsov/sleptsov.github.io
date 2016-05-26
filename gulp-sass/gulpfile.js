@@ -20,14 +20,14 @@ var browserSync = require('browser-sync').create();
 // check if we need to add sourcemaps
 const isDevelopment = !process.env.NODE_ENV ||process.env.NODE_ENV == 'development';
 
-//scss to css task
+//scss to styles task
 gulp.task('styles', function () {
-    return gulp.src('app/css/**/*.scss')
+    return gulp.src(['node_modules/flickity/dist/flickity.min.css','app/styles/main.scss'])
         .pipe(debug({title: 'styles'}))
         .pipe(gulpif(isDevelopment, sourcemaps.init()))
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(remember('styles'))
-        .pipe(concat('all.css'))
+        .pipe(concat('styles.css'))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -57,18 +57,25 @@ gulp.task('images', function(){
 //min html
 gulp.task('min-html', function(){
     return gulp.src('app/*.html')
+        .pipe(debug({title: 'html'}))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist'))
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('app/js/*.js', {since: gulp.lastRun('scripts')})
+    return gulp.src([
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
+            'node_modules/flickity/dist/flickity.pkgd.min.js',
+            'libs/lodash.js',
+            'app/js/*.js'
+            ])
         .pipe(gulpif(isDevelopment, sourcemaps.init()))
         .pipe(debug({title: 'scripts'}))
-        .pipe(concat('all.js'))
+        .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(gulpif(isDevelopment, sourcemaps.write()))
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('dist/scripts'));
 });
 
 //clean dist folder
@@ -81,7 +88,7 @@ gulp.task('build', gulp.series('clean', gulp.parallel( 'styles', 'scripts', 'min
 
 //watch task
 gulp.task('watch', function(){
-    gulp.watch('app/css/**/*.scss', gulp.series('styles'));
+    gulp.watch('app/styles/**/*.scss', gulp.series('styles'));
     //gulp.watch('app/assets/**/*.*', gulp.series('assets'));
     gulp.watch('app/js/**/*.js', gulp.series('scripts'));
     gulp.watch('app/**/*.html', gulp.series('min-html'));

@@ -1,0 +1,28 @@
+.footer {
+  @include content-block;
+  border-top: 4px solid #ff4e50;
+  .nav-name {
+    width: 100%;;
+  }
+}
+
+.nav-name-text {
+  color: $text-color;
+  margin: 5px 15px;
+}
+.nav {
+  width: 87%;
+  margin: 0 auto;
+}
+.nav li{
+  float: left;
+  width: 25%;
+}
+.nav-item {
+  display: block;
+  text-decoration: none;
+  color: #8f8f8f;
+  font: $font-roboto;
+  margin: 5px 15px;
+}
+

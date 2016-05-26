@@ -1,0 +1,22 @@
+.carousel-cell {
+  width: 100%;
+}
+.flickity-prev-next-button .arrow {
+  fill: #c5bfb7;
+}
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+.flickity-prev-next-button {
+  margin-top: -25px;
+}
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
