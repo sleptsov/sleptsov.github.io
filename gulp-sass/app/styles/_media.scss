@@ -35,6 +35,16 @@
     margin: 0 auto;
     max-width: 480px;
   }
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+  .grid-item {
+    height: 120px;
+  }
+  .site-logo {
+    padding: 20px 0;
+  }
 }
 @media (min-width: 768px) {
   .wrapper {
