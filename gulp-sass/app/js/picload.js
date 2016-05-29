@@ -1,51 +1,43 @@
 $(function(){
 
-
-
     var searchBtn = $('#search-btn');
     var search = $('#search-input');
+    var searchForm = $('#search-form');
 
-    searchBtn.on('click', function(){
+    searchForm.on('submit', function(e){
+        e.preventDefault();
         picLoad();
-    });
-    search.on('keypress', function(event){
-       if (event.keyCode == 13) {
-           picLoad();
-       }
+        search.val(null);
     });
 
 
     function picLoad(){
-        var url = search.val() || "hedgehog";
-        var x = [];
+        var API_KEY = '2656040-f05774d228b0892738e531ccc';
+        var url = search.val() || "holiday activity";
+        var results = [];
         $.ajax({
             method: 'GET',
-            url: 'http://api.riffsy.com/v1/search?tag=' + url + '&limit=7',
+            url: "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(url),
             dataType: 'json'
         }).done(function(data){
-            //console.log(data.results);
-            _.forEach(data.results, function(item){
-                //console.log(item.media);
-                _.forEach(item.media, function(subItem){
-                    x.push(subItem.gif.preview);
-                })
+            var arraySliceToSeven = _.slice(data.hits, 0, 7);
+            _.forEach(arraySliceToSeven, function(item){
+                results.push(_.pick(item, ['webformatURL', 'tags']));
             });
-            console.log(x);
+            // Grab the template script
+            var theTemplateScript = $("#address-template").html();
+            // Compile the template
+            var theTemplate = Handlebars.compile(theTemplateScript);
+            // Define our data object
+            var context = {
+                data: results
+            };
+            // Pass our data to the template
+            var theCompiledHtml = theTemplate(context);
+            // Add the compiled html to the page
+            $('.content-placeholder').html(theCompiledHtml);
 
-
-
-            _.forEach(x, function(item){
-                console.log(item);
-            })
         });
-        //var html = $('#script').html();
-        //var content = _.template(html);
-        //var boxT = $('#test1');
-        //boxT.append(content({
-        //    data: x
-        //}));
-
     }
-
     picLoad();
 });

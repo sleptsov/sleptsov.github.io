@@ -65,7 +65,6 @@ gulp.task('min-html', function(){
 gulp.task('scripts', function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
-            'node_modules/masonry-layout/dist/masonry.pkgd.min.js',
             'node_modules/flickity/dist/flickity.pkgd.min.js',
             'libs/lodash.js',
             'app/js/*.js'

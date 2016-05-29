@@ -1,5 +1,4 @@
 $(function(){
-
     $('.main-carousel').flickity({
         // options
         //cellAlign: 'left',
@@ -14,13 +13,5 @@ $(function(){
             x2: 50, y2: 35,
             x3: 15
         }
-    });
-
-    $('.grid').masonry({
-        // options
-        columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer',
-        itemSelector: '.grid-item',
-        percentPosition: true
     });
 });
