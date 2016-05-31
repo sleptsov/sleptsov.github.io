@@ -37,14 +37,6 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('dist/styles'));
 });
 
-//copy assets
-//gulp.task('assets', function(){
-//    return gulp.src('app/assets/**', {since: gulp.lastRun('assets')})
-//        .pipe(newer('dist'))
-//        .pipe(debug({title: 'assets'}))
-//        .pipe(gulp.dest('dist'))
-//});
-
 //min images
 gulp.task('images', function(){
    return gulp.src('app/assets/images/**', {since: gulp.lastRun('images')})
@@ -66,6 +58,7 @@ gulp.task('scripts', function() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/flickity/dist/flickity.pkgd.min.js',
+            //'node_modules/handlebars/dist/handlebars.min.js',
             'libs/lodash.js',
             'app/js/*.js'
             ])
@@ -88,7 +81,6 @@ gulp.task('build', gulp.series('clean', gulp.parallel( 'styles', 'scripts', 'min
 //watch task
 gulp.task('watch', function(){
     gulp.watch('app/styles/**/*.scss', gulp.series('styles'));
-    //gulp.watch('app/assets/**/*.*', gulp.series('assets'));
     gulp.watch('app/js/**/*.js', gulp.series('scripts'));
     gulp.watch('app/**/*.html', gulp.series('min-html'));
     gulp.watch('app/assets/images/**', gulp.series('images'));
@@ -105,4 +97,3 @@ gulp.task('serve', function(){
 
 //dev task
 gulp.task('dev', gulp.series('build', gulp.parallel('watch','serve')));
-

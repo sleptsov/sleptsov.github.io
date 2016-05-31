@@ -1,4 +1,3 @@
-
 .site-logo {
   font-size: 20px;
   letter-spacing: 3px;
@@ -12,7 +11,6 @@
 .site-logo__item--header {
   color: #fff;
 }
-
 
 .site-logo--smaller-red {
   font-size: 16px;
@@ -32,11 +30,6 @@
 
 .how-it-works{
   @include content-block;
-}
-
-.ggg {
-  width: 33%;
-  float: left;
 }
 
 .section__slogan {
@@ -64,19 +57,13 @@
   align-items: flex-start;
 }
 
-.how-it-works__item--bg-1 {
-  background: url("../images/slider/step1.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.how-it-works__item--bg-2 {
-  background: url("../images/slider/step2.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-.how-it-works__item--bg-3 {
-  background: url("../images/slider/step3.jpg") center center no-repeat;
-  background-size: cover;
+.how-it-works__item {
+  @each $bg, $bg-item in $how-it-works-slider-img {
+    &--#{$bg} {
+      background: $bg-item;
+      background-size: cover;
+    }
+  }
 }
 
 .how-it-works__text--main {
@@ -95,10 +82,6 @@
   @include content-block;
 }
 
-.partner_item {
-
-}
-
 .partner-img {
   width: 120px;
   height: 120px;
@@ -106,20 +89,12 @@
   margin: 0 auto;
 }
 
-.partner-img--bg-1 {
-  background: url("../images/users/face-1.png") center no-repeat;
-}
-
-.partner-img--bg-2 {
-  background: url("../images/users/face-2.png") center no-repeat;
-}
-
-.partner-img--bg-3 {
-  background: url("../images/users/face-3.png") center no-repeat;
-}
-
-.partner-img--bg-4 {
-  background: url("../images/users/face-4.png") center no-repeat;
+.partner-img {
+  @each $status, $face in $status-bg {
+    &--#{$status} {
+      background: $face;
+    }
+  }
 }
 
 .partner-name {
@@ -143,20 +118,12 @@
   border-radius: 20px;
 }
 
-.partner-img__icon--tv {
-  background: #ff4e50 url("../images/small-img/tv.png") 7px 6px no-repeat;
-}
-
-.partner-img__icon--bottle {
-  background: #ffa507 url("../images/small-img/bottle.png") 10px 7px no-repeat;
-}
-
-.partner-img__icon--cap {
-  background: #1cd7ad url("../images/small-img/cap.png") 7px 5px no-repeat;
-}
-
-.partner-img__icon--plane {
-  background: #4e73db url("../images/small-img/plane.png") 6px 8px no-repeat;
+.partner-img__icon {
+  @each $status, $icon in $status-icon {
+    &--#{$status} {
+      background: $icon;
+    }
+  }
 }
 
 //HOLIDAY ACTIVITY
@@ -187,7 +154,7 @@
   box-sizing: border-box;
   padding: 10px;
   position: relative;
-  background: url("../images/ideas-img/culture.jpg") center center no-repeat;
+  background: center center no-repeat;
   background-size: cover;
   border-radius: 7px;
 }

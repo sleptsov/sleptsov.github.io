@@ -22,8 +22,8 @@ $(function(){
         }).done(function(data){
             //console.log(data);
             if (data.totalHits > 0){
-                var arraySliceToSeven = _.slice(data.hits, 0, 7);
-                _.forEach(arraySliceToSeven, function(item){
+                var arrayRandomElements = _.sampleSize(data.hits, 7);
+                _.forEach(arrayRandomElements, function(item){
                     results.push(_.pick(item, ['webformatURL', 'tags']));
                 });
                 // Grab the template script

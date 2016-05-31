@@ -1,7 +1,21 @@
-//@import "base/_fonts";
-
 $font-montserrat:   bold 14px Montserrat, sans-serif;
 $font-roboto:       300 14px Roboto, sans-serif;
 $btn-main-color:    #ff4e50;
 $text-color:        #333;
-$url:               '/gulp-sass/dist/'
+$status-bg:         (
+                      bg-1: url("../images/users/face-1.png") center no-repeat,
+                      bg-2: url("../images/users/face-2.png") center no-repeat,
+                      bg-3: url("../images/users/face-3.png") center no-repeat,
+                      bg-4: url("../images/users/face-4.png") center no-repeat
+                    );
+$status-icon:       (
+                      tv: #ff4e50 url("../images/small-img/tv.png") 7px 6px no-repeat,
+                      bottle: #ffa507 url("../images/small-img/bottle.png") 10px 7px no-repeat,
+                      cap: #1cd7ad url("../images/small-img/cap.png") 7px 5px no-repeat,
+                      plane: #4e73db url("../images/small-img/plane.png") 6px 8px no-repeat
+                    );
+$how-it-works-slider-img: (
+                      bg-1: url("../images/slider/step1.jpg") center center no-repeat,
+                      bg-2: url("../images/slider/step2.jpg") center center no-repeat,
+                      bg-3: url("../images/slider/step3.jpg") center center no-repeat
+);
