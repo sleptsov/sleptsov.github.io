@@ -1,0 +1,84 @@
+//HEADER
+
+.social-btn {
+  display: flex;
+}
+
+.header-block {
+  @include layout;
+  margin: 40px 0 -8px 0;
+
+  .logo-box {
+    margin: 8px 0 0 4px;
+  }
+}
+
+//Header menu
+
+.header-nav {
+  @include layout;
+  background: #2a2d32;
+  margin: 40px 0;
+}
+
+.header-menu {
+  @include layout;
+
+  &__item {
+    @include link-view;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    color: #ffffff;
+    font: $ubuntu-condensed;
+    padding: 20px 40px;
+    border-right: 1px solid $border-color;
+    &:hover {
+      color: #f4b60d;
+    }
+  }
+}
+
+.search-form {
+
+  &__item {
+    @include search-view;
+    &::-webkit-search-cancel-button {
+      display: none;
+    }
+    height: 40px;
+    width: 240px;
+    margin: 0 8px 0 0;
+    color: #626466;
+    padding: 10px;
+    transition: all .3s;
+    &::-webkit-input-placeholder {
+      color: #626466;
+    }
+    &:focus {
+      width: 300px;
+      background-position: 275px center;
+    }
+  }
+}
+
+//Social buttons block
+
+.social-btn__item {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 7px;
+  @each $status, $icon in $social-icons {
+    &--#{$status} {
+      background: $icon;
+    }
+  }
+}
+.social-btn__item {
+  @each $status, $icon in $social-icons-hover {
+    &--#{$status}:hover {
+      background-position: $icon;
+    }
+  }
+}

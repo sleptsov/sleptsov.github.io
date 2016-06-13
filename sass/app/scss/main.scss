@@ -1,0 +1,20 @@
+@import "base/_reset";
+@import "base/_fonts";
+@import "_variables";
+@import "_mixins";
+@import "sections/_header";
+@import "sections/_slider";
+@import "sections/_content";
+@import "sections/_accordion";
+@import "sections/_footer";
+
+
+body {
+  font: $main-font;
+  color:  #2a2b2e;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}

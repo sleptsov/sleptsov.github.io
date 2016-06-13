@@ -1,0 +1,19 @@
+//Mixins
+
+@mixin layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin search-view {
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid $border-color;
+  background: #35383c url("../images/icons/other/search-icon.png") 215px center no-repeat;
+}
+
+@mixin link-view {
+  text-decoration: none;
+  color: #2a2b2e;
+}

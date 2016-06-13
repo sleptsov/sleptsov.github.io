@@ -1,0 +1,49 @@
+
+$main-font:           500 20px Ubuntu, sans-serif;
+$ubuntu-condensed:    normal 14px "Ubuntu Condensed", sans-serif;
+$plain-text:          normal 13px/20px Arial, sans-serif;
+$border-color:        #181a1d;
+$link-hover-color:    #248cec;
+$social-icons:        (
+                      facebook: url("../images/icons/spritesheet-social.png") -5px -5px no-repeat,
+                      twitter: url("../images/icons/spritesheet-social.png") -59px -57px no-repeat,
+                      rss: url("../images/icons/spritesheet-social.png") -31px -31px no-repeat,
+                      linkedin: url("../images/icons/spritesheet-social.png") -57px -5px no-repeat,
+                      skype: url("../images/icons/spritesheet-social.png") -5px -57px no-repeat
+                      );
+
+$social-icons-hover: (
+                      facebook: -31px -5px,
+                      twitter: -85px -5px,
+                      rss: -57px -31px,
+                      linkedin: -5px -31px,
+                      skype: -31px -57px
+                      );
+$article-icons:        (
+                      settings: url("../images/icons/spritesheet-services.png") -5px 0 no-repeat,
+                      range: url("../images/icons/spritesheet-services.png") -47px 0 no-repeat,
+                      truck: url("../images/icons/spritesheet-services.png") -89px 0 no-repeat
+                        );
+$service-bg:          (
+                      service-1: url("../images/images/service-1.jpg") center no-repeat,
+                      service-2: url("../images/images/service-2.jpg") center no-repeat,
+                      service-3: url("../images/images/service-3.jpg") center no-repeat,
+                      service-4: url("../images/images/service-4.jpg") center no-repeat
+                        );
+$news-img:            (
+                      news-img-1: url("../images/images/news-feed-img.jpg") center no-repeat,
+                      news-img-2: url("../images/images/news-feed-img-2.jpg") center no-repeat
+                        );
+$sponsors-img:           (
+                      sponsor-1: url("../images/icons/sponsors/sponsor-1.png") center no-repeat,
+                      sponsor-2: url("../images/icons/sponsors/sponsor-2.png") center no-repeat,
+                      sponsor-3: url("../images/icons/sponsors/sponsor-3.png") center no-repeat,
+                      sponsor-4: url("../images/icons/sponsors/sponsor-4.png") center no-repeat,
+                      sponsor-5: url("../images/icons/sponsors/sponsor-5.png") center no-repeat,
+                      sponsor-6: url("../images/icons/sponsors/sponsor-6.png") center no-repeat
+                        );
+$contact-bg:           (
+                      location: url("../images/icons/other/placeholder-filled-tool-shape-for-maps.png") left no-repeat,
+                      phone: url("../images/icons/other/smartphone-call.png") left no-repeat,
+                      email: url("../images/icons/other/business.png") left no-repeat
+                        );

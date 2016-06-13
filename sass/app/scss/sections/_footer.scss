@@ -1,0 +1,74 @@
+.footer {
+  background-color: #2a2d32;
+  padding: 40px 0 0 0;
+}
+
+.footer-nav-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+
+  .menu {
+    min-width: 260px;
+  }
+}
+
+.footer-nav-header {
+  line-height: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.footer-nav {
+
+  li {
+    border-bottom: 1px solid #393c40;
+
+  }
+  & li:last-child {
+    border: none;
+  }
+
+  &__item {
+    @include link-view;
+    display: block;
+    font: $plain-text;
+    color: #828385;
+    line-height: 40px;
+    &:hover {
+      color: $link-hover-color;
+    }
+
+
+  }
+
+}
+
+.contact-info-block {
+  background-color: #35383c;
+  font: $plain-text;
+  font-size: 12px;
+  color: #6f7073;
+}
+
+.contact-info-box {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact__item {
+  padding: 0 0 0 20px;
+  margin: 0 50px 0 0;
+  @each $status, $icon in $contact-bg {
+    &--#{$status} {
+      background: $icon;
+    }
+  }
+}
