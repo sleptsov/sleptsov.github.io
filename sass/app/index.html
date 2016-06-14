@@ -6,10 +6,6 @@
     <link rel="icon" href="images/icons/favicon.ico">
     <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
-    <script src="scripts/scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -33,11 +29,11 @@
             <div class="header-nav">
                 <nav>
                     <ul class="header-menu">
-                        <li><a href="#" class="header-menu__item">Home</a></li>
-                        <li><a href="#" class="header-menu__item">Features</a></li>
-                        <li><a href="#" class="header-menu__item">Services</a></li>
-                        <li><a href="#" class="header-menu__item">News</a></li>
-                        <li><a href="#" class="header-menu__item">Shop</a></li>
+                        <li><a href="#home" class="header-menu__item">Home</a></li>
+                        <li><a href="#features" class="header-menu__item">Features</a></li>
+                        <li><a href="#services" class="header-menu__item">Services</a></li>
+                        <li><a href="#news" class="header-menu__item">News</a></li>
+                        <li><a href="#shop" class="header-menu__item">Shop</a></li>
                     </ul>
                 </nav>
                 <form class="search-form">
@@ -53,6 +49,7 @@
     </header>
     <!--MAIN-->
     <main>
+        <a id="features"></a>
         <div class="wrapper">
             <div class="about-us-info">
                 <div class="about-us-info__item">
@@ -108,29 +105,39 @@
                 </div>
             </div>
         </div>
+        <a id="services"></a>
         <div class="our-services">
             <div class="wrapper">
                 <p class="our-services-heading">Our Services</p>
                 <div class="services">
                     <a href="#" class="service-link">
-                        <div class="services-link__item services-link__item--service-1"></div>
+                        <div class="services-link__item services-link__item--service-1">
+                            <div class="service-link--blue-hover"></div>
+                        </div>
                         Schedule Services
                     </a>
                     <a href="#" class="service-link">
-                        <div class="services-link__item services-link__item--service-2"></div>
+                        <div class="services-link__item services-link__item--service-2">
+                            <div class="service-link--blue-hover"></div>
+                        </div>
                         Preventive Maintence
                     </a>
                     <a href="#" class="service-link">
-                        <div class="services-link__item services-link__item--service-3"></div>
+                        <div class="services-link__item services-link__item--service-3">
+                            <div class="service-link--blue-hover"></div>
+                        </div>
                         Tire & Wheel Services
                     </a>
                     <a href="#" class="service-link">
-                        <div class="services-link__item services-link__item--service-4"></div>
+                        <div class="services-link__item services-link__item--service-4">
+                            <div class="service-link--blue-hover"></div>
+                        </div>
                         Repair Services
                     </a>
                 </div>
             </div>
         </div>
+        <a id="news"></a>
         <div class="new-banner-block">
             <div class="wrapper">
                 <div class="new-banner-layout">
@@ -327,5 +334,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+    <!--<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow13.js"></script>-->
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

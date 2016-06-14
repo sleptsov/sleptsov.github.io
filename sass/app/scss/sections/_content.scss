@@ -79,6 +79,20 @@
     &:hover {
       color: #f4b60d;
     }
+    &--blue-hover {
+      height: 100%;
+      width: 100%;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 72px;
+      line-height: 260px;
+      &:hover {
+        background-color: rgba(32, 139, 232, 0.7);
+        &:after {
+          content: '\002B';
+        }
+      }
+    }
   }
 
   &-link__item {
@@ -95,6 +109,8 @@
     }
   }
 }
+
+
 
 //New and Banner Block
 
@@ -199,5 +215,21 @@
         background: $bg-item;
       }
     }
+  }
+}
+
+.to-top-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #ccc url("../images/images/up-arrow.png") no-repeat center 43%;
+  border-radius: 30px;
+  &:hover {
+    background-color: #9F9F9F;
   }
 }
