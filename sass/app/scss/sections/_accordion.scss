@@ -1,0 +1,60 @@
+.accordion-link {
+  @include  link-view;
+  display: flex;
+  line-height: 40px;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  margin: 7px 0;
+
+  &__item {
+    display: block;
+    border: 1px solid #e8e8e8;
+
+    &--text {
+      flex: 1;
+      padding: 0 0 0 10px;
+    }
+
+
+    &--plus {
+      width: 40px;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &--plus:after {
+      content: '\002B';
+    }
+  }
+
+
+}
+
+.active {
+  background-color: #f4b60d;
+  color: #ffffff;
+
+  .accordion-link__item {
+    border: none;
+    border-right: 1px solid #f6c53d;
+  }
+
+  .accordion-link__item--plus:after {
+    content: '\2212';
+  }
+
+}
+
+.accordion-panel {
+  display: none;
+  font: $plain-text;
+  color: #8a8a8a;
+  margin: 30px 10px 40px 45px;
+}
+
+.show {
+  display: block;
+}

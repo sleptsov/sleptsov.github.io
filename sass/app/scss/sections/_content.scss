@@ -100,10 +100,12 @@
 
 .new-banner-layout {
   display: flex;
+  padding: 30px 0;
 }
 
 .new-banner-block {
   background-color: #f7f7f7;
+  min-height: 500px;
 }
 
 .news,
